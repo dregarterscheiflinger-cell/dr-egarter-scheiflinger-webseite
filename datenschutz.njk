@@ -1,43 +1,10 @@
-<!DOCTYPE html>
-<html lang="de">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Datenschutz | Dr. Karin Egarter-Scheiflinger</title>
-<meta name="robots" content="noindex">
-<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
-<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
-<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-<a class="skip-link" href="#main">Zum Inhalt springen</a>
-
-<header class="site-header">
-  <div class="container nav">
-    <a class="brand" href="index.html">
-      <img src="images/logo.png" alt="Dr. Egarter-Scheiflinger Logo">
-      <span class="brand-name visually-hidden">Dr. Karin Egarter-Scheiflinger</span>
-    </a>
-    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-panel" aria-label="Menü öffnen">
-      <svg class="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
-      <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-    </button>
-    <nav id="nav-panel" class="nav-panel" aria-label="Hauptnavigation">
-      <ul class="nav-links">
-        <li><a href="index.html">Startseite</a></li>
-        <li><a href="leistungen.html">Leistungen</a></li>
-        <li><a href="ueber-mich.html">Über mich</a></li>
-        <li><a href="kontakt.html">Kontakt</a></li>
-      </ul>
-      <div class="nav-cta">
-        <a class="btn btn-primary" href="kontakt.html#termin">Termin buchen</a>
-      </div>
-    </nav>
-  </div>
-</header>
-
-<main id="main">
+---
+layout: base.njk
+title: "Datenschutz | Dr. Karin Egarter-Scheiflinger"
+robots: "noindex"
+currentPage: "datenschutz.html"
+permalink: "datenschutz.html"
+---
   <div class="container page-header">
     <span class="eyebrow">Rechtliches</span>
     <h1>Datenschutzerklärung</h1>
@@ -79,52 +46,3 @@
       <p style="margin-bottom:0;">Wir behalten uns vor, diese Datenschutzerklärung anzupassen, sobald sich der Umfang der Datenverarbeitung (z. B. durch Einbindung weiterer Dienste) ändert.</p>
     </div>
   </div>
-</main>
-
-<footer class="site-footer">
-  <div class="container footer-grid">
-    <div class="footer-col">
-      <h3>Ordination</h3>
-      <address>
-        Dr. Karin Egarter-Scheiflinger<br>
-        Tirolerstraße 18/1<br>
-        9800 Spittal/Drau
-      </address>
-      <p style="margin-top:10px;">Wahlarztordination für Innere Medizin, Nierengesundheit &amp; Bluthochdruck</p>
-    </div>
-    <div class="footer-col">
-      <h3>Ordinationszeiten</h3>
-      <table class="footer-hours">
-        <tr><td>Montag</td><td>7:30–14 Uhr</td></tr>
-        <tr><td>Dienstag</td><td>7:30–13:30 &amp; 14–18 Uhr</td></tr>
-        <tr><td>Mittwoch</td><td>7:30–14 Uhr</td></tr>
-        <tr><td>Donnerstag</td><td>7:30–14 Uhr</td></tr>
-      </table>
-      <p style="margin-top:8px; font-size:0.85rem;">und nach telefonischer Vereinbarung</p>
-    </div>
-    <div class="footer-col">
-      <h3>Navigation</h3>
-      <ul class="footer-links">
-        <li><a href="index.html">Startseite</a></li>
-        <li><a href="leistungen.html">Leistungen</a></li>
-        <li><a href="ueber-mich.html">Über mich</a></li>
-        <li><a href="kontakt.html">Kontakt</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="container footer-bottom">
-    <span>© <span id="footer-year">2026</span> Dr. Karin Egarter-Scheiflinger</span>
-    <span><a href="impressum.html">Impressum</a> &nbsp;·&nbsp; <a href="datenschutz.html">Datenschutz</a></span>
-  </div>
-</footer>
-
-<div class="cookie-banner" role="dialog" aria-label="Cookie-Hinweis">
-  <p>Diese Website verwendet nur technisch notwendige Cookies sowie Google Maps zur Anzeige der Anfahrt. Weitere Informationen finden Sie in unserer <a href="datenschutz.html">Datenschutzerklärung</a>.</p>
-  <div class="cookie-banner-actions">
-    <button type="button" class="btn btn-primary btn-sm cookie-accept">Verstanden</button>
-  </div>
-</div>
-
-<script src="js/main.js"></script>
-</body>
-</html>

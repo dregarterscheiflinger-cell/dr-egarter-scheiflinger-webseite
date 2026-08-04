@@ -1,0 +1,22 @@
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html">
+      <img src="images/logo.png" alt="Dr. Egarter-Scheiflinger Logo">
+      <span class="brand-name visually-hidden">{{ site.name }}</span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-panel" aria-label="Menü öffnen">
+      <svg class="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <nav id="nav-panel" class="nav-panel" aria-label="Hauptnavigation">
+      <ul class="nav-links">
+        {%- for item in site.nav %}
+        <li><a href="{{ item.url }}"{% if item.url == currentPage %} aria-current="page"{% endif %}>{{ item.label }}</a></li>
+        {%- endfor %}
+      </ul>
+      <div class="nav-cta">
+        <a class="btn btn-primary" href="kontakt.html#termin">Termin buchen</a>
+      </div>
+    </nav>
+  </div>
+</header>

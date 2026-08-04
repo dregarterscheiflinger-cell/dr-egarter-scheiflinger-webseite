@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/dregarterscheiflinger-cell/dr-egarter-scheiflinger-webseite#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^3.1.6"
+    "@11ty/eleventy": "^3.1.6",
+    "js-yaml": "^5.2.3"
   }
 }
