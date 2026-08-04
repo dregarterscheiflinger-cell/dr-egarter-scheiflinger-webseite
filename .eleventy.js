@@ -12,8 +12,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("images");
   eleventyConfig.addPassthroughCopy("robots.txt");
   eleventyConfig.addPassthroughCopy("sitemap.xml");
-  // Pages not yet converted to .njk templates — passed through unmodified until migrated.
-  eleventyConfig.addPassthroughCopy("leistungen.html");
 
   return {
     dir: {
