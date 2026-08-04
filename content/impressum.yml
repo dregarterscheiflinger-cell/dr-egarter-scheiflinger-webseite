@@ -1,0 +1,29 @@
+medieninhaberin:
+  name: "Dr. Karin Egarter-Scheiflinger"
+  taetigkeit: "Fachärztin für Innere Medizin, Nephrologie und Hypertensiologie sowie Allgemein- und Familienmedizin"
+  strasse: "Tirolerstraße 18/1"
+  ort: "9800 Spittal/Drau, Österreich"
+
+kontakt:
+  telefon: "04762/41952"
+  email: "ordination@dr-egarter-scheiflinger.at"
+
+berufsrecht:
+  berufsbezeichnung: "Ärztin für Allgemeinmedizin, Fachärztin für Innere Medizin, Fachärztin für Nephrologie und Hypertensiologie"
+  verliehen_in: "Österreich"
+  kammer: "Ärztekammer für Kärnten, St. Veiterstraße 34, 9020 Klagenfurt"
+  vorschriften_text: 'Ärztegesetz 1998 (ÄrzteG), abrufbar unter <a href="https://www.ris.bka.gv.at" target="_blank" rel="noopener" style="text-decoration:underline;">www.ris.bka.gv.at</a>'
+
+versicherung:
+  name: "UNIQA Österreich Versicherungen AG"
+  geltungsbereich: "Österreich"
+
+umsatzsteuer_text: "Keine Umsatzsteuerpflicht (Kleinunternehmerregelung), daher keine UID-Nummer."
+
+unternehmensgegenstand_text: "Ausübung der ärztlichen Tätigkeit als Wahlärztin ohne Kassenvertrag."
+
+eu_streitschlichtung_text: 'Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit, abrufbar unter <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener" style="text-decoration:underline;">ec.europa.eu/consumers/odr</a>.'
+
+haftung_inhalte_text: "Alle Angaben auf dieser Website wurden sorgfältig recherchiert und dienen ausschließlich der allgemeinen Information. Sie ersetzen keine individuelle medizinische Beratung, Diagnose oder Behandlung durch eine Ärztin bzw. einen Arzt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte wird keine Gewähr übernommen."
+
+haftung_links_text: "Diese Website enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Für diese fremden Inhalte übernehmen wir daher keine Gewähr."

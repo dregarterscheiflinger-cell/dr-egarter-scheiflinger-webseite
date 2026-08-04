@@ -21,6 +21,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addGlobalData("leistungen", loadLeistungen);
   eleventyConfig.addGlobalData("ueberMich", () => loadYaml("content/ueber-mich.yml"));
   eleventyConfig.addGlobalData("kontakt", () => loadYaml("content/kontakt.yml"));
+  eleventyConfig.addGlobalData("impressum", () => loadYaml("content/impressum.yml"));
+  eleventyConfig.addGlobalData("datenschutz", () => loadYaml("content/datenschutz.yml"));
 
   eleventyConfig.addShortcode("icon", function (name, opts) {
     opts = opts || {};

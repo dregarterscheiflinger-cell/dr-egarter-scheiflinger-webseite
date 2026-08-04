@@ -16,38 +16,38 @@ permalink: "impressum.html"
       <h2 style="margin-bottom:10px;">Angaben gemäß § 5 ECG, § 25 Mediengesetz und Ärztegesetz</h2>
 
       <h3 style="margin-top:26px;">Medieninhaberin, Herausgeberin &amp; für den Inhalt verantwortlich</h3>
-      <p>Dr. Karin Egarter-Scheiflinger<br>
-      Fachärztin für Innere Medizin, Nephrologie und Hypertensiologie sowie Allgemein- und Familienmedizin<br>
-      Tirolerstraße 18/1<br>
-      9800 Spittal/Drau, Österreich</p>
+      <p>{{ impressum.medieninhaberin.name }}<br>
+      {{ impressum.medieninhaberin.taetigkeit }}<br>
+      {{ impressum.medieninhaberin.strasse }}<br>
+      {{ impressum.medieninhaberin.ort }}</p>
 
       <h3 style="margin-top:22px;">Kontakt</h3>
-      <p>Telefon: 04762/41952<br>
-      E-Mail: <a href="mailto:ordination@dr-egarter-scheiflinger.at" style="text-decoration:underline;">ordination@dr-egarter-scheiflinger.at</a></p>
+      <p>Telefon: {{ impressum.kontakt.telefon }}<br>
+      E-Mail: <a href="mailto:{{ impressum.kontakt.email }}" style="text-decoration:underline;">{{ impressum.kontakt.email }}</a></p>
 
       <h3 style="margin-top:22px;">Berufsbezeichnung &amp; berufsrechtliche Angaben</h3>
-      <p>Berufsbezeichnung: Ärztin für Allgemeinmedizin, Fachärztin für Innere Medizin, Fachärztin für Nephrologie und Hypertensiologie<br>
-      Verliehen in: Österreich<br>
-      Zuständige Kammer: Ärztekammer für Kärnten, St. Veiterstraße 34, 9020 Klagenfurt<br>
-      Anzuwendende berufsrechtliche Vorschriften: Ärztegesetz 1998 (ÄrzteG), abrufbar unter <a href="https://www.ris.bka.gv.at" target="_blank" rel="noopener" style="text-decoration:underline;">www.ris.bka.gv.at</a></p>
+      <p>Berufsbezeichnung: {{ impressum.berufsrecht.berufsbezeichnung }}<br>
+      Verliehen in: {{ impressum.berufsrecht.verliehen_in }}<br>
+      Zuständige Kammer: {{ impressum.berufsrecht.kammer }}<br>
+      Anzuwendende berufsrechtliche Vorschriften: {{ impressum.berufsrecht.vorschriften_text | safe }}</p>
 
       <h3 style="margin-top:22px;">Berufshaftpflichtversicherung</h3>
-      <p>Versicherung: UNIQA Österreich Versicherungen AG<br>
-      Räumlicher Geltungsbereich: Österreich</p>
+      <p>Versicherung: {{ impressum.versicherung.name }}<br>
+      Räumlicher Geltungsbereich: {{ impressum.versicherung.geltungsbereich }}</p>
 
       <h3 style="margin-top:22px;">Umsatzsteuer</h3>
-      <p>Keine Umsatzsteuerpflicht (Kleinunternehmerregelung), daher keine UID-Nummer.</p>
+      <p>{{ impressum.umsatzsteuer_text }}</p>
 
       <h3 style="margin-top:22px;">Unternehmensgegenstand</h3>
-      <p>Ausübung der ärztlichen Tätigkeit als Wahlärztin ohne Kassenvertrag.</p>
+      <p>{{ impressum.unternehmensgegenstand_text }}</p>
 
       <h3 style="margin-top:22px;">EU-Streitschlichtung</h3>
-      <p style="font-size:0.92rem; color:var(--gray-700);">Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit, abrufbar unter <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener" style="text-decoration:underline;">ec.europa.eu/consumers/odr</a>.</p>
+      <p style="font-size:0.92rem; color:var(--gray-700);">{{ impressum.eu_streitschlichtung_text | safe }}</p>
 
       <h3 style="margin-top:22px;">Haftung für Inhalte dieser Website</h3>
-      <p style="font-size:0.92rem; color:var(--gray-700);">Alle Angaben auf dieser Website wurden sorgfältig recherchiert und dienen ausschließlich der allgemeinen Information. Sie ersetzen keine individuelle medizinische Beratung, Diagnose oder Behandlung durch eine Ärztin bzw. einen Arzt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte wird keine Gewähr übernommen.</p>
+      <p style="font-size:0.92rem; color:var(--gray-700);">{{ impressum.haftung_inhalte_text }}</p>
 
       <h3 style="margin-top:22px;">Haftung für Links</h3>
-      <p style="font-size:0.92rem; color:var(--gray-700);">Diese Website enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Für diese fremden Inhalte übernehmen wir daher keine Gewähr.</p>
+      <p style="font-size:0.92rem; color:var(--gray-700);">{{ impressum.haftung_links_text }}</p>
     </div>
   </div>
