@@ -1,0 +1,358 @@
+backend:
+  name: github
+  repo: dregarterscheiflinger-cell/dr-egarter-scheiflinger-webseite
+  branch: main
+  auth_methods: [token]
+
+site_url: "https://dr-egarter-scheiflinger.at"
+display_url: "https://dr-egarter-scheiflinger.at"
+app_title: "Inhalte verwalten – Dr. Egarter-Scheiflinger"
+
+logo:
+  src: "/images/logo.png"
+  show_in_header: true
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+# Wiederverwendbare Feld-Definitionen (YAML-Anker)
+icon_options: &icon_options
+  - { label: "Standort (Pin)", value: "map-pin" }
+  - { label: "Uhr", value: "clock" }
+  - { label: "Telefon", value: "phone" }
+  - { label: "Häkchen", value: "check-circle" }
+  - { label: "Herz", value: "heart" }
+  - { label: "Tropfen", value: "droplet" }
+  - { label: "Aktivität / Diagnostik", value: "activity" }
+  - { label: "Briefumschlag / E-Mail", value: "mail" }
+  - { label: "Kalender", value: "calendar" }
+  - { label: "Hinweis (Ausrufezeichen)", value: "alert-circle" }
+  - { label: "Dokument", value: "file-text" }
+  - { label: "Auszeichnung", value: "award" }
+  - { label: "Familie", value: "family" }
+  - { label: "Haus", value: "home" }
+  - { label: "Ziel", value: "target" }
+  - { label: "Blatt", value: "leaf" }
+  - { label: "Balkendiagramm", value: "bar-chart" }
+  - { label: "Wind / Lunge", value: "wind" }
+  - { label: "Blitz", value: "zap" }
+  - { label: "Schild", value: "shield" }
+  - { label: "Aktualisieren", value: "refresh" }
+
+icon_field: &icon_field
+  name: icon
+  label: "Symbol"
+  widget: select
+  options: *icon_options
+
+singletons:
+  - name: site
+    label: "Globale Angaben"
+    label_singular: "Globale Angaben"
+    file: "_data/site.yml"
+    icon: settings
+    fields:
+      - { name: name, label: "Name der Praxis" }
+      - { name: tagline, label: "Tagline / Fachrichtung" }
+      - name: address
+        label: "Adresse"
+        widget: object
+        fields:
+          - { name: street, label: "Straße" }
+          - { name: zip, label: "PLZ" }
+          - { name: city, label: "Ort" }
+          - { name: country, label: "Land" }
+      - { name: portrait_image, label: "Portraitfoto", widget: image }
+      - { name: phone, label: "Telefonnummer (Anzeige)" }
+      - { name: phone_tel, label: "Telefonnummer für Anruf-Link (z. B. +43476241952)" }
+      - { name: email, label: "E-Mail-Adresse" }
+      - name: hours
+        label: "Öffnungszeiten"
+        widget: list
+        summary: "{{fields.day}}: {{fields.time}}"
+        fields:
+          - { name: day, label: "Wochentag" }
+          - { name: time, label: "Uhrzeit" }
+      - name: nav
+        label: "Hauptmenü"
+        widget: list
+        summary: "{{fields.label}}"
+        fields:
+          - { name: label, label: "Beschriftung" }
+          - { name: url, label: "Ziel-Seite (z. B. index.html)" }
+
+  - name: home
+    label: "Startseite"
+    file: "content/home.yml"
+    icon: home
+    fields:
+      - name: hero_slides
+        label: "Bildershow (Startseite oben)"
+        widget: list
+        summary: "{{fields.alt}}"
+        fields:
+          - { name: image, label: "Bild", widget: image }
+          - { name: alt, label: "Bildbeschreibung (für Barrierefreiheit)" }
+      - name: intro
+        label: "Einleitung"
+        widget: object
+        fields:
+          - { name: heading, label: "Überschrift" }
+          - { name: lede, label: "Anmoderation (fett)", widget: text }
+          - { name: text, label: "Text", widget: text }
+      - name: quick_facts
+        label: "Kurzinfo-Kacheln"
+        widget: list
+        summary: "{{fields.title}}"
+        fields:
+          - *icon_field
+          - { name: title, label: "Titel" }
+          - { name: text, label: "Text (HTML wie <br> oder <a> ist erlaubt)", widget: text }
+      - name: leistungen_teaser
+        label: "Leistungs-Vorschau"
+        widget: object
+        fields:
+          - { name: heading, label: "Überschrift" }
+          - { name: lede, label: "Anmoderation", widget: text }
+          - name: cards
+            label: "Kacheln"
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - *icon_field
+              - { name: title, label: "Titel" }
+              - { name: text, label: "Text", widget: text }
+              - { name: link, label: "Verlinkung (z. B. leistungen.html#diagnostik)" }
+      - name: erstbesuch
+        label: "Erstbesuch"
+        widget: object
+        fields:
+          - { name: heading, label: "Überschrift" }
+          - { name: text, label: "Text", widget: text }
+          - { name: image, label: "Bild", widget: image }
+          - { name: image_alt, label: "Bildbeschreibung" }
+      - name: mitbringen
+        label: "Was mitbringen"
+        widget: object
+        fields:
+          - { name: heading, label: "Überschrift" }
+          - { name: text, label: "Text", widget: text }
+          - name: items
+            label: "Checkliste"
+            widget: list
+            field: { name: item, label: "Punkt" }
+      - name: wahlarzt
+        label: "Wahlarzt-Erklärung"
+        widget: object
+        fields:
+          - { name: heading, label: "Überschrift" }
+          - { name: text, label: "Text", widget: text }
+      - { name: quote, label: "Zitat" }
+      - { name: final_cta_heading, label: "Abschluss-Überschrift" }
+
+  - name: ueber_mich
+    label: "Über mich"
+    file: "content/ueber-mich.yml"
+    icon: person
+    fields:
+      - name: badges
+        label: "Kurz-Qualifikationen (Badges oben)"
+        widget: list
+        field: { name: badge, label: "Badge" }
+      - name: intro
+        label: "Einleitungstext"
+        widget: list
+        field: { name: paragraph, label: "Absatz", widget: text }
+      - name: werdegang
+        label: "Werdegang-Einleitung"
+        widget: object
+        fields:
+          - { name: heading, label: "Überschrift" }
+          - { name: lede, label: "Anmoderation", widget: text }
+          - { name: image, label: "Bild", widget: image }
+          - { name: image_alt, label: "Bildbeschreibung" }
+      - name: timeline
+        label: "Werdegang – Zeitstrahl"
+        widget: list
+        summary: "{{fields.jahr}}: {{fields.titel}}"
+        fields:
+          - { name: jahr, label: "Jahr(e)" }
+          - { name: titel, label: "Titel" }
+          - { name: text, label: "Beschreibung" }
+      - { name: quote, label: "Zitat" }
+      - name: diplome
+        label: "Diplome"
+        widget: list
+        summary: "{{fields.text}}"
+        fields:
+          - *icon_field
+          - { name: text, label: "Text" }
+      - name: weitere_ausbildungen
+        label: "Weitere Ausbildungen"
+        widget: list
+        summary: "{{fields.text}}"
+        fields:
+          - *icon_field
+          - { name: text, label: "Text" }
+      - name: final_cta
+        label: "Abschluss-Bereich"
+        widget: object
+        fields:
+          - { name: heading, label: "Überschrift" }
+          - { name: text, label: "Text" }
+
+  - name: kontakt
+    label: "Kontakt"
+    file: "content/kontakt.yml"
+    icon: mail
+    fields:
+      - name: page_header
+        label: "Seitenkopf"
+        widget: object
+        fields:
+          - { name: heading, label: "Überschrift" }
+          - { name: lede, label: "Anmoderation", widget: text }
+      - { name: hero_image, label: "Titelbild", widget: image }
+      - { name: hero_image_alt, label: "Bildbeschreibung" }
+      - name: kontaktdaten
+        label: "Kontaktdaten-Hinweise"
+        widget: object
+        fields:
+          - { name: telefon_hinweis, label: "Hinweis unter der Telefonnummer" }
+          - { name: email_hinweis, label: "Hinweis unter der E-Mail-Adresse", widget: text }
+          - { name: oeffnungszeiten_hinweis, label: "Hinweis unter den Öffnungszeiten" }
+      - name: karte
+        label: "Karte"
+        widget: object
+        fields:
+          - { name: iframe_src, label: "Google-Maps-Einbettungslink (nicht ändern, außer die Adresse ändert sich)" }
+          - { name: iframe_title, label: "Kartentitel (für Barrierefreiheit)" }
+          - { name: hinweis, label: "Hinweistext unter der Karte (HTML/Link erlaubt)", widget: text }
+      - name: booking
+        label: "Terminbuchung"
+        widget: object
+        fields:
+          - { name: lede, label: "Text über dem Terminkalender", widget: text }
+          - { name: placeholder_heading, label: "Platzhalter-Überschrift" }
+      - name: organisatorisches
+        label: "Organisatorisches"
+        widget: object
+        fields:
+          - { name: heading, label: "Überschrift" }
+          - { name: ecard_text, label: "E-Card-Text", widget: text }
+          - { name: ecard_notice, label: "E-Card-Hinweisbox", widget: text }
+          - { name: rezept_text, label: "Rezeptbestellung-Text (HTML/Link erlaubt)", widget: text }
+      - name: wahlarzt
+        label: "Wahlarzt-Erklärung"
+        widget: object
+        fields:
+          - { name: heading, label: "Überschrift" }
+          - { name: text, label: "Text", widget: text }
+
+  - name: impressum
+    label: "Impressum"
+    file: "content/impressum.yml"
+    icon: gavel
+    fields:
+      - name: medieninhaberin
+        label: "Medieninhaberin"
+        widget: object
+        fields:
+          - { name: name, label: "Name" }
+          - { name: taetigkeit, label: "Berufsbezeichnung / Tätigkeit", widget: text }
+          - { name: strasse, label: "Straße" }
+          - { name: ort, label: "PLZ / Ort / Land" }
+      - name: kontakt
+        label: "Kontakt"
+        widget: object
+        fields:
+          - { name: telefon, label: "Telefon" }
+          - { name: email, label: "E-Mail" }
+      - name: berufsrecht
+        label: "Berufsrechtliche Angaben"
+        widget: object
+        fields:
+          - { name: berufsbezeichnung, label: "Berufsbezeichnung", widget: text }
+          - { name: verliehen_in, label: "Verliehen in" }
+          - { name: kammer, label: "Zuständige Kammer" }
+          - { name: vorschriften_text, label: "Berufsrechtliche Vorschriften (HTML/Link erlaubt)", widget: text }
+      - name: versicherung
+        label: "Berufshaftpflichtversicherung"
+        widget: object
+        fields:
+          - { name: name, label: "Versicherung" }
+          - { name: geltungsbereich, label: "Räumlicher Geltungsbereich" }
+      - { name: umsatzsteuer_text, label: "Umsatzsteuer", widget: text }
+      - { name: unternehmensgegenstand_text, label: "Unternehmensgegenstand", widget: text }
+      - { name: eu_streitschlichtung_text, label: "EU-Streitschlichtung (HTML/Link erlaubt)", widget: text }
+      - { name: haftung_inhalte_text, label: "Haftung für Inhalte", widget: text }
+      - { name: haftung_links_text, label: "Haftung für Links", widget: text }
+
+  - name: datenschutz
+    label: "Datenschutz"
+    file: "content/datenschutz.yml"
+    icon: shield
+    fields:
+      - name: abschnitte
+        label: "Abschnitte"
+        widget: list
+        summary: "{{fields.nummer}} {{fields.titel}}"
+        fields:
+          - { name: nummer, label: "Nummer (z. B. 1.)" }
+          - { name: titel, label: "Titel" }
+          - { name: text, label: "Text (HTML/Link erlaubt)", widget: text }
+
+collections:
+  - name: leistungen
+    label: "Leistungen"
+    label_singular: "Leistungs-Kategorie"
+    folder: "content/leistungen"
+    format: "yaml"
+    identifier_field: title
+    summary: "{{title}}"
+    fields:
+      - { name: order, label: "Reihenfolge (1, 2, 3, …)", widget: number, value_type: int }
+      - { name: id, label: "Technische ID (nicht ändern – wird für Links verwendet)" }
+      - { name: open, label: "Beim Öffnen der Seite bereits aufgeklappt?", widget: boolean, default: false }
+      - *icon_field
+      - { name: title, label: "Titel" }
+      - { name: image, label: "Bild", widget: image }
+      - { name: image_alt, label: "Bildbeschreibung" }
+      - name: intro
+        label: "Einleitungstext(e)"
+        widget: list
+        required: false
+        field: { name: paragraph, label: "Absatz", widget: text }
+      - name: krankheitsbilder
+        label: "Liste der Krankheitsbilder (nur bei „Internistische Fragestellungen“)"
+        widget: list
+        required: false
+        field: { name: eintrag, label: "Eintrag" }
+      - name: begriffsliste
+        label: "Begriffsliste (nur bei „Vorsorge“)"
+        widget: list
+        required: false
+        summary: "{{fields.begriff}}"
+        fields:
+          - { name: begriff, label: "Begriff" }
+          - { name: beschreibung, label: "Beschreibung", widget: text }
+      - name: gruppen
+        label: "Unterpunkt-Gruppen (aufklappbare Unterpunkte, z. B. bei „Diagnostik“)"
+        widget: list
+        required: false
+        fields:
+          - name: unterpunkte
+            label: "Unterpunkte"
+            widget: list
+            summary: "{{fields.titel}}"
+            fields:
+              - { name: titel, label: "Titel" }
+              - { name: text, label: "Text (leer lassen, wenn stattdessen eine Begriffsliste verwendet wird)", widget: text, required: false }
+              - name: begriffsliste
+                label: "Begriffsliste (z. B. bei „Ultraschall“)"
+                widget: list
+                required: false
+                summary: "{{fields.begriff}}"
+                fields:
+                  - { name: begriff, label: "Begriff" }
+                  - { name: beschreibung, label: "Beschreibung", widget: text }
