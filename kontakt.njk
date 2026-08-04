@@ -7,12 +7,12 @@ permalink: "kontakt.html"
 ---
   <div class="container page-header">
     <span class="eyebrow">Kontakt</span>
-    <h1>Wir sind für Sie da</h1>
-    <p class="lede">Ob Terminvereinbarung, Rezeptbestellung oder allgemeine Fragen – hier finden Sie alle Kontaktmöglichkeiten und Informationen rund um Ihren Besuch.</p>
+    <h1>{{ kontakt.page_header.heading }}</h1>
+    <p class="lede">{{ kontakt.page_header.lede }}</p>
   </div>
 
   <div class="container" style="margin-bottom:12px;">
-    <img src="images/breit.jpg" alt="Dr. Karin Egarter-Scheiflinger" loading="lazy" style="width:100%; aspect-ratio:21/9; max-height:340px; object-fit:cover; border-radius:var(--radius-lg); box-shadow:var(--shadow-md);">
+    <img src="{{ kontakt.hero_image }}" alt="{{ kontakt.hero_image_alt }}" loading="lazy" style="width:100%; aspect-ratio:21/9; max-height:340px; object-fit:cover; border-radius:var(--radius-lg); box-shadow:var(--shadow-md);">
   </div>
 
   <!-- Contact details + map -->
@@ -32,7 +32,7 @@ permalink: "kontakt.html"
           <div>
             <strong>Telefon</strong>
             <span><a href="tel:{{ site.phone_tel }}" style="text-decoration:underline;">{{ site.phone }}</a></span><br>
-            <span style="font-size:0.85rem; color:var(--gray-500);">Terminvereinbarung Mo–Do, 10–12 Uhr</span>
+            <span style="font-size:0.85rem; color:var(--gray-500);">{{ kontakt.kontaktdaten.telefon_hinweis }}</span>
           </div>
         </div>
         <div class="contact-line">
@@ -40,7 +40,7 @@ permalink: "kontakt.html"
           <div>
             <strong>E-Mail</strong>
             <a href="mailto:{{ site.email }}">{{ site.email }}</a>
-            <span style="display:block; font-size:0.82rem; color:var(--gray-500); margin-top:6px;">Bitte nur für Terminvergabe sowie Fragen zu Terminen &amp; Ordinationszeiten – medizinische Anfragen können aus medizinischen und datenschutzrechtlichen Gründen per E-Mail leider nicht beantwortet werden.</span>
+            <span style="display:block; font-size:0.82rem; color:var(--gray-500); margin-top:6px;">{{ kontakt.kontaktdaten.email_hinweis }}</span>
           </div>
         </div>
         <div class="contact-line">
@@ -52,7 +52,7 @@ permalink: "kontakt.html"
               <tr><td>{{ h.day }}</td><td>{{ h.time }}</td></tr>
               {%- endfor %}
             </table>
-            <p style="margin-top:8px; font-size:0.85rem; color:var(--gray-500);">und nach telefonischer Vereinbarung</p>
+            <p style="margin-top:8px; font-size:0.85rem; color:var(--gray-500);">{{ kontakt.kontaktdaten.oeffnungszeiten_hinweis }}</p>
           </div>
         </div>
       </div>
@@ -60,13 +60,13 @@ permalink: "kontakt.html"
       <div>
         <div class="map-frame">
           <iframe
-            src="https://www.google.com/maps?q=Tirolerstra%C3%9Fe+18%2F1,+9800+Spittal+an+der+Drau,+%C3%96sterreich&output=embed"
-            title="Standort der Ordination auf Google Maps"
+            src="{{ kontakt.karte.iframe_src | safe }}"
+            title="{{ kontakt.karte.iframe_title }}"
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade">
           </iframe>
         </div>
-        <p style="font-size:0.82rem; color:var(--gray-500); margin-top:10px;">Beim Laden der Karte wird eine Verbindung zu Google-Servern hergestellt. Details dazu finden Sie in unserer <a href="datenschutz.html" style="text-decoration:underline;">Datenschutzerklärung</a>.</p>
+        <p style="font-size:0.82rem; color:var(--gray-500); margin-top:10px;">{{ kontakt.karte.hinweis | safe }}</p>
       </div>
     </div>
   </div>
@@ -77,11 +77,11 @@ permalink: "kontakt.html"
       <div class="section-head section-head--center">
         <span class="eyebrow">Terminvereinbarung</span>
         <h2>Termin buchen</h2>
-        <p class="lede">Um den Ablauf für uns alle möglichst zu optimieren, ist eine Terminvereinbarung nur unter der Telefonnummer {{ site.phone }} von Mo–Do, 10–12 Uhr möglich. Alternativ kann eine Online-Terminbuchung über den Online-Terminkalender gemacht werden.</p>
+        <p class="lede">{{ kontakt.booking.lede }}</p>
       </div>
       <div class="booking-placeholder">
-        <svg class="icon" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-        <h3>Online-Terminkalender folgt in Kürze</h3>
+        {% icon "calendar", {size: 34, strokeWidth: 1.7} %}
+        <h3>{{ kontakt.booking.placeholder_heading }}</h3>
         <code><!-- TODO: TermiOn Embed-/iFrame-Code hier einfügen --></code>
       </div>
     </div>
@@ -92,21 +92,21 @@ permalink: "kontakt.html"
     <div class="container">
       <div class="section-head">
         <span class="eyebrow">Organisatorisches</span>
-        <h2>E-Card, Rezepte &amp; Terminvergabe</h2>
+        <h2>{{ kontakt.organisatorisches.heading }}</h2>
       </div>
 
       <div class="split">
         <div class="info-box">
           <h3 style="margin-bottom:10px;">E-Card</h3>
-          <p style="color:var(--gray-700);">Die E-Card ist bei jedem Besuch in der Ordination verpflichtend mitzubringen und zu stecken.</p>
+          <p style="color:var(--gray-700);">{{ kontakt.organisatorisches.ecard_text }}</p>
           <div class="notice" style="margin-top:16px;">
-            <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-            <span>Aufgrund neuer regulatorischer Anforderungen der Bundesregierung gilt dies ab 1. Jänner 2026.</span>
+            {% icon "alert-circle", {size: 20, strokeWidth: 1.8} %}
+            <span>{{ kontakt.organisatorisches.ecard_notice }}</span>
           </div>
         </div>
         <div class="info-box">
           <h3 style="margin-bottom:10px;">Rezeptbestellung</h3>
-          <p style="color:var(--gray-700);">Rezepte können telefonisch oder bevorzugt per E-Mail an <a href="mailto:{{ site.email }}" style="text-decoration:underline;">{{ site.email }}</a> bestellt werden. Für eine Weiterverordnung ist es notwendig, 1× im Quartal persönlich zu den Ordinationszeiten in die Ordination zu kommen, um die E-Card zu stecken – das ist ohne Terminvereinbarung möglich. Es wird eine Pauschale von 5 € pro Rezept bzw. 10 € für ein bewilligungspflichtiges Rezept verrechnet.</p>
+          <p style="color:var(--gray-700);">{{ kontakt.organisatorisches.rezept_text | safe }}</p>
         </div>
       </div>
     </div>
@@ -118,10 +118,10 @@ permalink: "kontakt.html"
       <div class="split">
         <div>
           <span class="eyebrow">Wahlarztordination</span>
-          <h2>Wahlärztin ohne Kassenvertrag</h2>
+          <h2>{{ kontakt.wahlarzt.heading }}</h2>
         </div>
         <div>
-          <p>Ich bin als Wahlärztin ohne Kassenvertrag tätig. Das bedeutet, dass wir unsere ärztlichen Leistungen per Honorarnote direkt mit Ihnen verrechnen und für Sie die Einreichung bei Ihrer Krankenkasse übernehmen. Von dieser erhalten Sie dann einen Teil der Kosten rückerstattet. Sollten Sie privat zusatzversichert sein, können Sie sogar mit einer Rückerstattung in Höhe der Gesamtkosten rechnen.</p>
+          <p>{{ kontakt.wahlarzt.text }}</p>
         </div>
       </div>
     </div>
