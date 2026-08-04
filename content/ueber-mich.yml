@@ -1,0 +1,88 @@
+badges:
+  - "Fachärztin für Innere Medizin"
+  - "Fachärztin für Nierengesundheit & Bluthochdruck"
+  - "Fachärztin für Allgemein- & Familienmedizin"
+
+intro:
+  - "Egal, ob präventive Maßnahmen, akute oder chronische Beschwerden – ich nehme mir Zeit, Ihnen zuzuhören. Empathie und ein respektvoller Umgang sind mir besonders wichtig, denn Vertrauen ist die Grundlage jeder guten Behandlung."
+  - "Für mich steht das Gespräch mit der Patientin oder dem Patienten an erster Stelle – erst wenn ich Sie und Ihre Anliegen wirklich verstehe, kann ich Sie optimal begleiten. Durch die laufende Teilnahme an Fortbildungen und Kongressen bleibe ich für Sie am neuesten Stand der Wissenschaft."
+
+werdegang:
+  heading: "Mein Weg in die Innere Medizin"
+  lede: "Durch meine langjährige Tätigkeit als Internistin im Krankenhaus – zuletzt als Primarärztin und Oberärztin mit Leitung der Dialyse- und Nierenambulanz – bringe ich umfassende praktische Erfahrung in meine Wahlarztordination ein."
+  image: "images/breit.jpg"
+  image_alt: "Dr. Karin Egarter-Scheiflinger"
+
+timeline:
+  - jahr: "1994–1999"
+    titel: "Medizinstudium"
+    text: "Medizinische Universität Wien · Promotion zum Doktor der gesamten Heilkunde"
+  - jahr: "1999–2000"
+    titel: "Universitätsklinik für Innere Medizin I"
+    text: "AKH Wien, Abteilung für Hämatologie und Hämostaseologie"
+  - jahr: "2000–2003"
+    titel: "Ausbildung zur Ärztin für Allgemeinmedizin"
+    text: "A.ö. Krankenhaus Spittal/Drau und LKH Villach"
+  - jahr: "2003–2009"
+    titel: "Ausbildung zur Fachärztin für Innere Medizin"
+    text: "A.ö. Krankenhaus Spittal/Drau"
+  - jahr: "2003–2008"
+    titel: "Notärztin"
+    text: "Österreichisches Rotes Kreuz"
+  - jahr: "2010–2013"
+    titel: "Ausbildung im Additivfach Nephrologie und Hypertensiologie"
+    text: "Klinikum Klagenfurt am Wörthersee"
+  - jahr: "2013–2017"
+    titel: "Fachärztin für Innere Medizin, Nephrologin"
+    text: "A.ö. Krankenhaus Spittal/Drau"
+  - jahr: "2017–2020"
+    titel: "Erste Oberärztin der Internen Abteilung"
+    text: "Leitung der Dialyse- und Nierenambulanz, A.ö. Krankenhaus Spittal/Drau"
+  - jahr: "2020–2025"
+    titel: "Primarärztin der Internen Abteilung"
+    text: "A.ö. Krankenhaus Spittal/Drau"
+  - jahr: "2026"
+    titel: "Oberärztin & Leitung der Dialyse- und Nierenambulanz"
+    text: "A.ö. Krankenhaus Spittal/Drau — Beginn der Wahlarztordination"
+
+quote: "„Genießen Sie Ihr Leben, wir kümmern uns um Ihre Beschwerden.“"
+
+diplome:
+  - icon: heart
+    text: "Fachärztin für Innere Medizin"
+  - icon: droplet
+    text: "Fachärztin für Nierengesundheit & Bluthochdruck"
+  - icon: home
+    text: "Fachärztin für Allgemein- & Familienmedizin"
+  - icon: award
+    text: "Fortbildungs-Diplom der Österreichischen Ärztekammer"
+  - icon: target
+    text: "ÖÄK-Diplom für Akupunktur"
+  - icon: leaf
+    text: "ÖÄK-Diplom für Ernährungsmedizin"
+  - icon: activity
+    text: "ÖÄK-Diplom für Sportmedizin"
+  - icon: alert-circle
+    text: "ÖÄK-Diplom für Notfallmedizin"
+  - icon: bar-chart
+    text: "Diplom Health Care Management, Donau-Universität Krems"
+
+weitere_ausbildungen:
+  - icon: activity
+    text: "Sonographie-, EKG- & Endoskopie-Kurse, laufende Refresher"
+  - icon: heart
+    text: "Spezialkurse Echokardiographie, Uni Graz — Klappenvitien"
+  - icon: wind
+    text: "Spirometriekurse"
+  - icon: zap
+    text: "Ausbildung Spiroergometrie"
+  - icon: shield
+    text: "Rheuma-College"
+  - icon: droplet
+    text: "Masterclass Diabetes"
+  - icon: refresh
+    text: "Regelmäßige Updates in der Inneren Medizin"
+
+final_cta:
+  heading: "Ich freue mich auf Sie!"
+  text: "Vereinbaren Sie einen Termin für Ihre Erstordination."

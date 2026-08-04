@@ -15,12 +15,13 @@ permalink: "ueber-mich.html"
         <span class="eyebrow">Über mich</span>
         <h1>Dr. Karin Egarter-Scheiflinger</h1>
         <ul class="badge-row">
-          <li>Fachärztin für Innere Medizin</li>
-          <li>Fachärztin für Nierengesundheit &amp; Bluthochdruck</li>
-          <li>Fachärztin für Allgemein- &amp; Familienmedizin</li>
+          {%- for badge in ueberMich.badges %}
+          <li>{{ badge }}</li>
+          {%- endfor %}
         </ul>
-        <p>Egal, ob präventive Maßnahmen, akute oder chronische Beschwerden – ich nehme mir Zeit, Ihnen zuzuhören. Empathie und ein respektvoller Umgang sind mir besonders wichtig, denn Vertrauen ist die Grundlage jeder guten Behandlung.</p>
-        <p>Für mich steht das Gespräch mit der Patientin oder dem Patienten an erster Stelle – erst wenn ich Sie und Ihre Anliegen wirklich verstehe, kann ich Sie optimal begleiten. Durch die laufende Teilnahme an Fortbildungen und Kongressen bleibe ich für Sie am neuesten Stand der Wissenschaft.</p>
+        {%- for p in ueberMich.intro %}
+        <p>{{ p }}</p>
+        {%- endfor %}
       </div>
     </div>
   </div>
@@ -31,70 +32,27 @@ permalink: "ueber-mich.html"
       <div class="split" style="align-items:center;">
         <div>
           <span class="eyebrow">Werdegang</span>
-          <h2>Mein Weg in die Innere Medizin</h2>
-          <p class="lede" style="margin:12px 0 24px;">Durch meine langjährige Tätigkeit als Internistin im Krankenhaus – zuletzt als Primarärztin und Oberärztin mit Leitung der Dialyse- und Nierenambulanz – bringe ich umfassende praktische Erfahrung in meine Wahlarztordination ein.</p>
-          <img src="images/breit.jpg" alt="Dr. Karin Egarter-Scheiflinger" style="border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
+          <h2>{{ ueberMich.werdegang.heading }}</h2>
+          <p class="lede" style="margin:12px 0 24px;">{{ ueberMich.werdegang.lede }}</p>
+          <img src="{{ ueberMich.werdegang.image }}" alt="{{ ueberMich.werdegang.image_alt }}" style="border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
         </div>
         <div>
         <div class="h-scroll-wrap">
           <button type="button" class="h-scroll-btn h-scroll-prev" aria-label="Zurück"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg></button>
           <button type="button" class="h-scroll-btn h-scroll-next" aria-label="Weiter"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></button>
           <div class="timeline h-scroll-track">
+            {%- for item in ueberMich.timeline %}
             <div class="timeline-item">
-              <span class="timeline-year">1994–1999</span>
-              <h3>Medizinstudium</h3>
-              <p>Medizinische Universität Wien · Promotion zum Doktor der gesamten Heilkunde</p>
+              <span class="timeline-year">{{ item.jahr }}</span>
+              <h3>{{ item.titel }}</h3>
+              <p>{{ item.text }}</p>
             </div>
-            <div class="timeline-item">
-              <span class="timeline-year">1999–2000</span>
-              <h3>Universitätsklinik für Innere Medizin I</h3>
-              <p>AKH Wien, Abteilung für Hämatologie und Hämostaseologie</p>
-            </div>
-            <div class="timeline-item">
-              <span class="timeline-year">2000–2003</span>
-              <h3>Ausbildung zur Ärztin für Allgemeinmedizin</h3>
-              <p>A.ö. Krankenhaus Spittal/Drau und LKH Villach</p>
-            </div>
-            <div class="timeline-item">
-              <span class="timeline-year">2003–2009</span>
-              <h3>Ausbildung zur Fachärztin für Innere Medizin</h3>
-              <p>A.ö. Krankenhaus Spittal/Drau</p>
-            </div>
-            <div class="timeline-item">
-              <span class="timeline-year">2003–2008</span>
-              <h3>Notärztin</h3>
-              <p>Österreichisches Rotes Kreuz</p>
-            </div>
-            <div class="timeline-item">
-              <span class="timeline-year">2010–2013</span>
-              <h3>Ausbildung im Additivfach Nephrologie und Hypertensiologie</h3>
-              <p>Klinikum Klagenfurt am Wörthersee</p>
-            </div>
-            <div class="timeline-item">
-              <span class="timeline-year">2013–2017</span>
-              <h3>Fachärztin für Innere Medizin, Nephrologin</h3>
-              <p>A.ö. Krankenhaus Spittal/Drau</p>
-            </div>
-            <div class="timeline-item">
-              <span class="timeline-year">2017–2020</span>
-              <h3>Erste Oberärztin der Internen Abteilung</h3>
-              <p>Leitung der Dialyse- und Nierenambulanz, A.ö. Krankenhaus Spittal/Drau</p>
-            </div>
-            <div class="timeline-item">
-              <span class="timeline-year">2020–2025</span>
-              <h3>Primarärztin der Internen Abteilung</h3>
-              <p>A.ö. Krankenhaus Spittal/Drau</p>
-            </div>
-            <div class="timeline-item">
-              <span class="timeline-year">2026</span>
-              <h3>Oberärztin &amp; Leitung der Dialyse- und Nierenambulanz</h3>
-              <p>A.ö. Krankenhaus Spittal/Drau — Beginn der Wahlarztordination</p>
-            </div>
+            {%- endfor %}
           </div>
         </div>
         <div class="mini-quote">
           <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M7 11c-1.7 0-3-1.3-3-3s1.3-3 3-3 3 1.3 3 3c0 3.3-2.4 6.1-5.5 6.9l-.5-1.4C6.2 12.9 7 12 7 11zm10 0c-1.7 0-3-1.3-3-3s1.3-3 3-3 3 1.3 3 3c0 3.3-2.4 6.1-5.5 6.9l-.5-1.4c2.2-.6 3-1.5 3-2.5z"/></svg>
-          <blockquote>„Genießen Sie Ihr Leben, wir kümmern uns um Ihre Beschwerden.“</blockquote>
+          <blockquote>{{ ueberMich.quote }}</blockquote>
         </div>
         </div>
       </div>
@@ -107,42 +65,12 @@ permalink: "ueber-mich.html"
       <span class="eyebrow">Qualifikationen</span>
       <h2>Diplome</h2>
       <div class="credential-badges" style="margin-top:22px;">
+        {%- for d in ueberMich.diplome %}
         <div class="credential-badge">
-          <div class="icon-circle"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg></div>
-          <span>Fachärztin für Innere Medizin</span>
+          <div class="icon-circle">{% icon d.icon, {size: 21, class: ""} %}</div>
+          <span>{{ d.text }}</span>
         </div>
-        <div class="credential-badge">
-          <div class="icon-circle"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69s-7 7.44-7 12.31a7 7 0 0 0 14 0c0-4.87-7-12.31-7-12.31z"/></svg></div>
-          <span>Fachärztin für Nierengesundheit &amp; Bluthochdruck</span>
-        </div>
-        <div class="credential-badge">
-          <div class="icon-circle"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
-          <span>Fachärztin für Allgemein- &amp; Familienmedizin</span>
-        </div>
-        <div class="credential-badge">
-          <div class="icon-circle"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg></div>
-          <span>Fortbildungs-Diplom der Österreichischen Ärztekammer</span>
-        </div>
-        <div class="credential-badge">
-          <div class="icon-circle"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg></div>
-          <span>ÖÄK-Diplom für Akupunktur</span>
-        </div>
-        <div class="credential-badge">
-          <div class="icon-circle"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 11 13 11 10"/></svg></div>
-          <span>ÖÄK-Diplom für Ernährungsmedizin</span>
-        </div>
-        <div class="credential-badge">
-          <div class="icon-circle"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
-          <span>ÖÄK-Diplom für Sportmedizin</span>
-        </div>
-        <div class="credential-badge">
-          <div class="icon-circle"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div>
-          <span>ÖÄK-Diplom für Notfallmedizin</span>
-        </div>
-        <div class="credential-badge">
-          <div class="icon-circle"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div>
-          <span>Diplom Health Care Management, Donau-Universität Krems</span>
-        </div>
+        {%- endfor %}
       </div>
     </div>
   </div>
@@ -152,34 +80,12 @@ permalink: "ueber-mich.html"
     <div class="container">
       <h2>Weitere Ausbildungen</h2>
       <div class="credential-list" style="margin-top:22px;">
+        {%- for a in ueberMich.weitere_ausbildungen %}
         <div class="credential-row">
-          <div class="icon-circle"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
-          <span>Sonographie-, EKG- &amp; Endoskopie-Kurse, laufende Refresher</span>
+          <div class="icon-circle">{% icon a.icon, {size: 19, class: ""} %}</div>
+          <span>{{ a.text }}</span>
         </div>
-        <div class="credential-row">
-          <div class="icon-circle"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg></div>
-          <span>Spezialkurse Echokardiographie, Uni Graz — Klappenvitien</span>
-        </div>
-        <div class="credential-row">
-          <div class="icon-circle"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9.6 4.6A2 2 0 1 1 11 8H2"/><path d="M12.6 19.4A2 2 0 1 0 14 16H2"/><path d="M17.7 7.7A2.5 2.5 0 1 1 19.5 12H2"/></svg></div>
-          <span>Spirometriekurse</span>
-        </div>
-        <div class="credential-row">
-          <div class="icon-circle"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
-          <span>Ausbildung Spiroergometrie</span>
-        </div>
-        <div class="credential-row">
-          <div class="icon-circle"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
-          <span>Rheuma-College</span>
-        </div>
-        <div class="credential-row">
-          <div class="icon-circle"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69s-7 7.44-7 12.31a7 7 0 0 0 14 0c0-4.87-7-12.31-7-12.31z"/></svg></div>
-          <span>Masterclass Diabetes</span>
-        </div>
-        <div class="credential-row">
-          <div class="icon-circle"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg></div>
-          <span>Regelmäßige Updates in der Inneren Medizin</span>
-        </div>
+        {%- endfor %}
       </div>
     </div>
   </div>
@@ -188,8 +94,8 @@ permalink: "ueber-mich.html"
     <div class="container">
       <div class="info-box info-box--bordeaux" style="display:flex; flex-wrap:wrap; gap:20px; align-items:center; justify-content:space-between;">
         <div>
-          <h2 style="margin-bottom:6px;">Ich freue mich auf Sie!</h2>
-          <p style="color:var(--gray-700);">Vereinbaren Sie einen Termin für Ihre Erstordination.</p>
+          <h2 style="margin-bottom:6px;">{{ ueberMich.final_cta.heading }}</h2>
+          <p style="color:var(--gray-700);">{{ ueberMich.final_cta.text }}</p>
         </div>
         <a class="btn btn-primary" href="kontakt.html#termin">Termin buchen</a>
       </div>

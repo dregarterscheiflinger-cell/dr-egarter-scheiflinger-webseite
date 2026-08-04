@@ -19,17 +19,19 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addGlobalData("site", () => loadYaml("_data/site.yml"));
   eleventyConfig.addGlobalData("home", () => loadYaml("content/home.yml"));
   eleventyConfig.addGlobalData("leistungen", loadLeistungen);
+  eleventyConfig.addGlobalData("ueberMich", () => loadYaml("content/ueber-mich.yml"));
 
   eleventyConfig.addShortcode("icon", function (name, opts) {
     opts = opts || {};
     const size = opts.size || 24;
     const strokeWidth = opts.strokeWidth || 1.7;
-    const cls = opts.class || "icon";
+    const cls = opts.class !== undefined ? opts.class : "icon";
+    const classAttr = cls ? ` class="${cls}"` : "";
     const inner = icons[name] || "";
     if (!inner) {
       console.warn(`[icon shortcode] Unknown icon name: "${name}"`);
     }
-    return `<svg class="${cls}" width="${size}" height="${size}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="${strokeWidth}" stroke-linecap="round" stroke-linejoin="round">${inner}</svg>`;
+    return `<svg${classAttr} width="${size}" height="${size}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="${strokeWidth}" stroke-linecap="round" stroke-linejoin="round">${inner}</svg>`;
   });
 
   eleventyConfig.addPassthroughCopy("css");
