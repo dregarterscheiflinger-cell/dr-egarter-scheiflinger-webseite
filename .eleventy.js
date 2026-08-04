@@ -7,8 +7,18 @@ module.exports = function (eleventyConfig) {
   const loadYaml = (relPath) =>
     yaml.load(fs.readFileSync(path.join(__dirname, relPath), "utf8"));
 
+  const loadLeistungen = () => {
+    const dir = path.join(__dirname, "content/leistungen");
+    return fs
+      .readdirSync(dir)
+      .filter((file) => file.endsWith(".yml"))
+      .map((file) => loadYaml(path.join("content/leistungen", file)))
+      .sort((a, b) => a.order - b.order);
+  };
+
   eleventyConfig.addGlobalData("site", () => loadYaml("_data/site.yml"));
   eleventyConfig.addGlobalData("home", () => loadYaml("content/home.yml"));
+  eleventyConfig.addGlobalData("leistungen", loadLeistungen);
 
   eleventyConfig.addShortcode("icon", function (name, opts) {
     opts = opts || {};

@@ -16,187 +16,54 @@ permalink: "leistungen.html"
     <div class="container">
       <div class="accordion">
 
-        <details class="accordion-item" id="internistische-leistungen" open>
+        {%- for item in leistungen %}
+        <details class="accordion-item" id="{{ item.id }}"{% if item.open %} open{% endif %}>
           <summary>
-            <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
-            <span>Behandlung internistischer Fragestellungen</span>
+            {% icon item.icon, {size: 24, strokeWidth: 1.7} %}
+            <span>{{ item.title }}</span>
             <svg class="chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
           </summary>
           <div class="accordion-body">
-            <img class="accordion-image" src="images/leistungen/internistisch.jpg" alt="Ärztin mit Stethoskop bei der Untersuchung (Symbolbild)" loading="lazy">
-            <p>Durch meine langjährige Tätigkeit als Internistin im Krankenhaus hatte ich täglich mit Erkrankungen des gesamten Spektrums der Inneren Medizin zu tun – ob Herz und Kreislauf, Diabetes, Bluthochdruck, Magen-Darmerkrankungen oder mein Spezialgebiet, die Nieren. Diese langjährige praktische Erfahrung sowie die laufende Teilnahme an Kongressen und Fortbildungen ermöglicht es mir, Sie nach den neuesten medizinischen Richtlinien zu behandeln.</p>
+            <img class="accordion-image" src="{{ item.image }}" alt="{{ item.image_alt }}" loading="lazy">
+            {%- for p in item.intro %}
+            <p>{{ p }}</p>
+            {%- endfor %}
+            {%- if item.krankheitsbilder %}
             <ul class="disease-grid">
-              <li>Herzerkrankungen (Herzschwäche, Rhythmusstörungen, Herzklappenerkrankungen, KHK)</li>
-              <li>Bluthochdruck</li>
-              <li>Diabetes &amp; Stoffwechselerkrankungen</li>
-              <li>Nierenerkrankungen</li>
-              <li>Magen-Darmbeschwerden</li>
-              <li>Gallengangs- &amp; Lebererkrankungen</li>
-              <li>Schilddrüsenerkrankungen</li>
-              <li>Bluterkrankungen</li>
-              <li>Osteoporose</li>
+              {%- for k in item.krankheitsbilder %}
+              <li>{{ k }}</li>
+              {%- endfor %}
             </ul>
-          </div>
-        </details>
-
-        <details class="accordion-item" id="diagnostik">
-          <summary>
-            <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
-            <span>Diagnostik</span>
-            <svg class="chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-          </summary>
-          <div class="accordion-body">
-            <img class="accordion-image" src="images/leistungen/diagnostik.jpg" alt="Ultraschallgerät im Untersuchungsraum (Symbolbild)" loading="lazy">
-            <p>Ich nehme mir ausreichend Zeit für eine ausführliche Anamnese sowie eine gewissenhafte körperliche Untersuchung in einem ruhigen Ambiente. Dazu gehören das Abtasten der Schilddrüse, das Abhören von Herz und Lunge, das Abtasten und Abhorchen des Bauches, die Inspektion der Beine, sowie Blutdruck- und Pulsmessungen. Wir erheben gemeinsam Ihr persönliches Risikoprofil und besprechen, wie Sie aktiv Ihre Gesundheit fördern und Ihre Lebensqualität steigern können.</p>
-
-            <div class="sub-accordion">
-              <details class="sub-accordion-item">
-                <summary><span>Ruhe-EKG</span><svg class="chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></summary>
-                <div class="sub-accordion-body"><p>Mit Hilfe von Elektroden wird die elektrische Aktivität des Herzens über dem Brustkorb sowie über Armen und Beinen abgeleitet und auf einem Monitor dargestellt – zum Erfassen von Informationen über Herzrhythmus, Herzfrequenz, Erregungsausbreitungsstörungen und strukturelle Herzerkrankungen.</p></div>
-              </details>
-              <details class="sub-accordion-item">
-                <summary><span>Belastungs-EKG (Ergometrie)</span><svg class="chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></summary>
-                <div class="sub-accordion-body"><p>Beim Belastungs-EKG erfolgt die Messung während körperlicher Aktivität am Fahrradergometer, um das Herz bei Belastung zu testen. Es dient der Erfassung Ihrer individuellen Leistungsfähigkeit und stellt die wichtigste nicht-invasive Untersuchungsmethode zur Überprüfung Ihrer Durchblutung am Herzen dar. Weiters ist diese Untersuchung wichtig zur Objektivierung insbesondere unter körperlicher Anstrengung auftretender Herzrhythmusstörungen und zur Therapiekontrolle eines medikamentös eingestellten Blutdrucks sowie zur Erfassung Ihrer Leistungsfähigkeit.</p></div>
-              </details>
-              <details class="sub-accordion-item">
-                <summary><span>Langzeit-Blutdruckmessung</span><svg class="chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></summary>
-                <div class="sub-accordion-body"><p>Über 24 Stunden werden Ihre Blutdruckwerte automatisch gemessen. Diese Untersuchung zeigt, wie sich Ihr Blutdruck tagsüber, nachts und unter körperlicher Anstrengung verhält und ermöglicht eine gezielte Therapieanpassung.</p></div>
-              </details>
-              <details class="sub-accordion-item">
-                <summary><span>Langzeit-EKG</span><svg class="chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></summary>
-                <div class="sub-accordion-body"><p>Das Langzeit-EKG zeichnet über 24–72 Stunden Ihre Herzaktivität auf. Damit lassen sich Herzrhythmusstörungen und Beschwerden wie Schwindel, Herzrasen oder Ohnmachtsanfälle abklären. Herzrhythmusstörungen treten oft unvermittelt auf und können in der „Momentaufnahme" des Ruhe-EKG nicht erfasst werden. Sie bekommen ein kleines Gerät in der Ordination angelegt und bringen es am Folgetag wieder zurück. Das Ergebnis wird dann von mir ausgewertet und mit Ihnen besprochen.</p></div>
-              </details>
-              <details class="sub-accordion-item">
-                <summary><span>Blutabnahme</span><svg class="chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></summary>
-                <div class="sub-accordion-body"><p>Die Blutabnahme erfolgt direkt in unserer Ordination. Durch Zusammenarbeit mit einem umliegenden Labor können die meisten wichtigen Blutwerte bestimmt werden.</p></div>
-              </details>
-              <details class="sub-accordion-item">
-                <summary><span>Harn- und Stuhluntersuchungen</span><svg class="chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></summary>
-                <div class="sub-accordion-body"><p>Abklärung von Verdauungsbeschwerden. Eine Harnanalyse liefert wichtige Hinweise auf Erkrankungen der Nieren und der Harnblase.</p></div>
-              </details>
-            </div>
-
-            <div class="sub-accordion">
-              <details class="sub-accordion-item">
-                <summary><span>Ultraschall</span><svg class="chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></summary>
-                <div class="sub-accordion-body">
-                  <dl class="def-list">
-                    <dt>Echokardiographie (Herzultraschall)</dt>
-                    <dd>Bei dieser Untersuchung wird das Herz in seiner Struktur und Funktion untersucht. Morphologie und Funktion der Herzklappen werden objektiviert.</dd>
-                    <dt>Sonographie des Abdomens</dt>
-                    <dd>Schmerzfreie Ultraschalluntersuchung des Bauchraums von außen.</dd>
-                    <dt>Sonographie der Nieren</dt>
-                    <dd>Schmerzfreie Ultraschalluntersuchung der Nieren von außen.</dd>
-                    <dt>Sonographie der Schilddrüse</dt>
-                    <dd>Schmerzfreie Ultraschalluntersuchung der Schilddrüse von außen.</dd>
-                    <dt>Triplex-Sonographie der Carotis- und Vertebralarterien (Halsgefäße)</dt>
-                    <dd>Die Halsschlagadern sind dem Ultraschall gut zugänglich, sodass die Beschaffenheit der Arterienwand beurteilt werden kann. So können einerseits Kalkablagerungen oder gar Engstellen erkannt werden und andererseits kann indirekt das Risiko für das Bestehen von Gefäßwandveränderungen im Bereich der Herzkranzgefäße abgeschätzt werden.</dd>
-                    <dt>Sonographie der Beinvenen</dt>
-                    <dd>Zum Ausschluss einer Thrombose.</dd>
-                  </dl>
-                </div>
-              </details>
-              <details class="sub-accordion-item">
-                <summary><span>Spirometrie (Lungenfunktionstest)</span><svg class="chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></summary>
-                <div class="sub-accordion-body"><p>Das ist ein diagnostisches Verfahren zur Messung der Lungenfunktion. Bei der Untersuchung wird über ein Mundstück, das mit den Lippen fest umschlossen wird, ein- und ausgeatmet. Dieses ist mit einem Messgerät verbunden. Ihre Nase wird während der Messung mit einer Nasenklemme verschlossen. Mit diesem Lungenfunktionstest lassen sich verschiedene Parameter bestimmen, die Aufschluss über das Vorliegen einer Atemwegs- oder Lungenerkrankung geben.</p></div>
-              </details>
-            </div>
-          </div>
-        </details>
-
-        <details class="accordion-item" id="vorsorge">
-          <summary>
-            <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-            <span>Vorsorge- &amp; Gesundenuntersuchung</span>
-            <svg class="chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-          </summary>
-          <div class="accordion-body">
-            <img class="accordion-image" src="images/leistungen/vorsorge.jpg" alt="Untersuchungsraum mit Untersuchungsliege (Symbolbild)" loading="lazy">
+            {%- endif %}
+            {%- if item.begriffsliste %}
             <dl class="def-list">
-              <dt>Vorsorgeuntersuchung</dt>
-              <dd>Einmal jährlich können Sie ab dem 19. Lebensjahr mit Wohnsitz in Österreich die Vorsorgeuntersuchung kostenlos in Anspruch nehmen. Im Rahmen der Gesundenuntersuchung wird diese bei uns durchgeführt.</dd>
-              <dt>Gesundenuntersuchung</dt>
-              <dd>Herz-Kreislauf-Erkrankungen verursachen in unserer Gesellschaft die häufigsten Gesundheitsbeschwerden. Schlechte Ernährungsgewohnheiten und Bewegungsmangel tragen dazu bei, dass wir uns schnell müde und erschöpft fühlen. Eine Änderung des Lebensstils ist hier die wichtigste Maßnahme. Ist eine weitere Behandlung notwendig, entwickeln wir gemeinsam die besten Lösungen, um ein Fortschreiten der Erkrankung zu verhindern und Ihre Lebensqualität zu verbessern.</dd>
+              {%- for b in item.begriffsliste %}
+              <dt>{{ b.begriff }}</dt>
+              <dd>{{ b.beschreibung }}</dd>
+              {%- endfor %}
             </dl>
-          </div>
-        </details>
+            {%- endif %}
 
-        <details class="accordion-item" id="op-freigabe">
-          <summary>
-            <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
-            <span>OP-Freigabe</span>
-            <svg class="chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-          </summary>
-          <div class="accordion-body">
-            <img class="accordion-image" src="images/leistungen/op-freigabe.jpg" alt="Chirurgische Instrumente vor einer Operation (Symbolbild)" loading="lazy">
-            <p>Vor geplanten Operationen wird eine internistische Operationsfreigabe vom Krankenhaus verlangt. Wir führen die dazu notwendigen Untersuchungen durch. Falls eine weiterführende Untersuchung (z. B. Lungenröntgen) notwendig ist, erhalten Sie bei Bedarf eine Überweisung. Von mir bekommen Sie anschließend eine internistische Stellungnahme bezüglich des Nutzen-Risiko-Verhältnisses vor dem geplanten operativen Eingriff.</p>
-          </div>
-        </details>
-
-        <details class="accordion-item" id="manager-check">
-          <summary>
-            <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
-            <span>Manager-Check</span>
-            <svg class="chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-          </summary>
-          <div class="accordion-body">
-            <img class="accordion-image" src="images/leistungen/manager-check.jpg" alt="EKG-Aufzeichnung zur Herzuntersuchung (Symbolbild)" loading="lazy">
-            <p>Insbesondere für Menschen in leitender Position nimmt die physische und psychische Belastung stetig zu. Lange Arbeitstage, hoher Leistungsdruck, große Verantwortung und mangelnde Erholung führen häufig zu Erkrankungen des Herz-Kreislaufsystems.</p>
-            <p>Ich biete Ihnen eine umfassende Untersuchung an einem einzelnen Termin: Anamnesegespräch, klinische Untersuchung, Ruhe-EKG, Ergometrie, Herzultraschall und Ultraschall der Halsgefäße. Bitte bringen Sie einen aktuellen großen Blutbefund sowie Ruhe-Blutdruckwerte der letzten Wochen mit – alternativ können Sie vorab zur Blutabnahme in die Ordination kommen.</p>
-          </div>
-        </details>
-
-        <details class="accordion-item" id="mutter-kind-pass">
-          <summary>
-            <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-            <span>Interne Mutter-Kind-Pass-Untersuchung</span>
-            <svg class="chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-          </summary>
-          <div class="accordion-body">
-            <img class="accordion-image" src="images/leistungen/mutter-kind.jpg" alt="Ultraschalluntersuchung in der Schwangerschaft (Symbolbild)" loading="lazy">
-            <p>Zwischen der 17. und 20. Schwangerschaftswoche ist eine internistische Untersuchung vorgesehen. Sie dient der Früherkennung und Behandlung möglicher Erkrankungen.</p>
-          </div>
-        </details>
-
-        <details class="accordion-item" id="nierengesundheit">
-          <summary>
-            <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69s-7 7.44-7 12.31a7 7 0 0 0 14 0c0-4.87-7-12.31-7-12.31z"/></svg>
-            <span>Nierengesundheit</span>
-            <svg class="chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-          </summary>
-          <div class="accordion-body">
-            <img class="accordion-image" src="images/leistungen/nierengesundheit.jpg" alt="Ultraschalluntersuchung des Bauchraums (Symbolbild)" loading="lazy">
-            <p>Unsere Nieren sind ein wahres Wunderwerk: Jeden Tag filtrieren sie über 1.500 Liter Blut und übernehmen zahlreiche weitere wichtige Funktionen im Körper. Viele Erkrankungen können den Nieren schaden – allen voran Bluthochdruck und Diabetes, aber auch autoimmunologische Erkrankungen (Glomerulonephritiden) oder angeborene Erkrankungen wie familiäre Zystennieren.</p>
-            <p>Ich bin spezialisiert auf die Diagnose und Behandlung von Nierenerkrankungen und lege ein besonderes Augenmerk auf Herz- und Gefäßerkrankungen, die bei Patientinnen und Patienten mit Nierenschwäche gehäuft vorkommen.</p>
-
+            {%- for gruppe in item.gruppen %}
             <div class="sub-accordion">
+              {%- for up in gruppe.unterpunkte %}
               <details class="sub-accordion-item">
-                <summary><span>Nierensonographie</span><svg class="chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></summary>
-                <div class="sub-accordion-body"><p>Mit dem Ultraschall kann ich Ihre Nieren schmerzfrei, von außen untersuchen. Dabei kann ich einerseits die Form und Größe der Nieren beurteilen und andererseits bestimmte Veränderungen an den Nieren erkennen (wie z. B. Zysten oder Tumore). Außerdem kann ich mir die Durchblutung der Nieren, die Nierengefäße und auch die ableitenden Harnwege inklusive der Harnblase ansehen. Durch diese Untersuchung gewinne ich wertvolle Hinweise auf etwaige Erkrankungen der Nieren.</p></div>
+                <summary><span>{{ up.titel }}</span><svg class="chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></summary>
+                <div class="sub-accordion-body">{% if up.begriffsliste %}
+                  <dl class="def-list">
+                    {%- for b in up.begriffsliste %}
+                    <dt>{{ b.begriff }}</dt>
+                    <dd>{{ b.beschreibung }}</dd>
+                    {%- endfor %}
+                  </dl>
+                {% else %}<p>{{ up.text | safe }}</p>{% endif %}</div>
               </details>
-              <details class="sub-accordion-item">
-                <summary><span>Laboruntersuchung</span><svg class="chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></summary>
-                <div class="sub-accordion-body"><p>Wir können uns bestimmte Werte im Blut ansehen, die einerseits auf die Nierenfunktion selbst rückschließen lassen (z. B. Kreatinin) und andererseits auf Folgeerkrankungen einer Nierenschwäche hinweisen (wie z. B. eine Blutarmut im Rahmen einer Nierenschwäche oder Probleme mit dem Calcium- und Phosphatstoffwechsel).</p></div>
-              </details>
-              <details class="sub-accordion-item">
-                <summary><span>Harnuntersuchung</span><svg class="chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></summary>
-                <div class="sub-accordion-body"><p>Ihren Harn nehmen wir genauer unter die Lupe. Anhand von bestimmten Parametern im Harn können wir auf bestimmte Erkrankungen der Niere rückschließen. Ein besonderes Augenmerk legen wir dabei auf Eiweiß oder rote Blutkörperchen im Harn. Die Harnuntersuchung hilft uns aber auch, zwischen den meisten gutartigen Infektionen der Niere und schweren Erkrankungen der Niere zu unterscheiden.</p></div>
-              </details>
-              <details class="sub-accordion-item">
-                <summary><span>Vorbereitung zur Nierentransplantation</span><svg class="chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></summary>
-                <div class="sub-accordion-body"><p>Als Patientin oder Patient, die/der an Nierenschwäche leidet, wird dieses Thema vielleicht früher oder später für Sie relevant. Vor einer geplanten Nierentransplantation ist eine Vielzahl an Untersuchungen notwendig, um Sie und etwaige Spender auf eine Eignung zu testen. Einen Teil der geplanten Untersuchungen können wir in unserer Ordination durchführen. Für den Rest bin ich Ihnen behilflich und kann Ihnen die entsprechenden Überweisungen geben. Außerdem kann ich Sie sehr ausführlich über das Thema Nierentransplantation aufklären und so eventuelle Unsicherheiten aus dem Weg räumen.</p></div>
-              </details>
-              <details class="sub-accordion-item">
-                <summary><span>Begleitung bei geplanter Nierentransplantation</span><svg class="chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></summary>
-                <div class="sub-accordion-body"><p>Auch wenn Sie schon für eine Nierentransplantation gelistet wurden, sind regelmäßige Kontrolluntersuchungen notwendig, um Ihr Transplantationszentrum auf dem Laufenden zu halten. Nur dadurch kann gewährleistet werden, dass Sie weiterhin für die Nierentransplantation gelistet bleiben. Gerne bieten wir Ihnen auch hier alle notwendigen Untersuchungen an und begleiten Sie dabei.</p></div>
-              </details>
-              <details class="sub-accordion-item">
-                <summary><span>Nachsorge nach erfolgter Nierentransplantation</span><svg class="chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></summary>
-                <div class="sub-accordion-body"><p>Nach einer Nierentransplantation werden Patientinnen und Patienten meist an eine Nierenambulanz angebunden. Nichtsdestotrotz sind regelmäßige internistische Kontrollen notwendig, damit Ihr „neues" Organ weiterhin gut funktioniert und wir mögliche Folgeerkrankungen rasch erkennen und dementsprechend behandeln können. Durch meine jahrelange Erfahrung auf diesem Gebiet und meine Kontakte zu den einzelnen Transplantationszentren weiß ich genau, worauf wir achten müssen.</p></div>
-              </details>
+              {%- endfor %}
             </div>
+            {%- endfor %}
           </div>
         </details>
+        {%- endfor %}
 
       </div>
     </div>

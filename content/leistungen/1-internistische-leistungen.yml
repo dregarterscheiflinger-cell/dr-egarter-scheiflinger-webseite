@@ -1,0 +1,19 @@
+order: 1
+id: internistische-leistungen
+open: true
+icon: heart
+title: "Behandlung internistischer Fragestellungen"
+image: "images/leistungen/internistisch.jpg"
+image_alt: "Ärztin mit Stethoskop bei der Untersuchung (Symbolbild)"
+intro:
+  - "Durch meine langjährige Tätigkeit als Internistin im Krankenhaus hatte ich täglich mit Erkrankungen des gesamten Spektrums der Inneren Medizin zu tun – ob Herz und Kreislauf, Diabetes, Bluthochdruck, Magen-Darmerkrankungen oder mein Spezialgebiet, die Nieren. Diese langjährige praktische Erfahrung sowie die laufende Teilnahme an Kongressen und Fortbildungen ermöglicht es mir, Sie nach den neuesten medizinischen Richtlinien zu behandeln."
+krankheitsbilder:
+  - "Herzerkrankungen (Herzschwäche, Rhythmusstörungen, Herzklappenerkrankungen, KHK)"
+  - "Bluthochdruck"
+  - "Diabetes & Stoffwechselerkrankungen"
+  - "Nierenerkrankungen"
+  - "Magen-Darmbeschwerden"
+  - "Gallengangs- & Lebererkrankungen"
+  - "Schilddrüsenerkrankungen"
+  - "Bluterkrankungen"
+  - "Osteoporose"
