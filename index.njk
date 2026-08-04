@@ -1,71 +1,39 @@
-<!DOCTYPE html>
-<html lang="de">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dr. Karin Egarter-Scheiflinger | Wahlarztordination für Innere Medizin, Nierengesundheit &amp; Bluthochdruck in Spittal/Drau</title>
-<meta name="description" content="Wahlarztordination von Dr. Karin Egarter-Scheiflinger in Spittal/Drau. Fachärztin für Innere Medizin, Nierengesundheit und Bluthochdruck sowie Allgemeinmedizin. Persönliche Betreuung, moderne Diagnostik.">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Physician",
-  "name": "Dr. Karin Egarter-Scheiflinger",
-  "image": "https://www.dr-egarter-scheiflinger.at/images/portrait.jpg",
-  "medicalSpecialty": ["Internal Medicine", "Nephrology"],
-  "description": "Wahlarztordination für Innere Medizin, Nierengesundheit und Bluthochdruck sowie Allgemeinmedizin in Spittal/Drau.",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Tirolerstraße 18/1",
-    "addressLocality": "Spittal an der Drau",
-    "postalCode": "9800",
-    "addressCountry": "AT"
-  },
-  "telephone": "+43 4762 41952",
-  "email": "ordination@dr-egarter-scheiflinger.at",
-  "url": "https://www.dr-egarter-scheiflinger.at/",
-  "isAcceptingNewPatients": true,
-  "openingHoursSpecification": [
-    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Monday", "opens": "07:30", "closes": "14:00" },
-    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Tuesday", "opens": "07:30", "closes": "13:30" },
-    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Tuesday", "opens": "14:00", "closes": "18:00" },
-    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Wednesday", "opens": "07:30", "closes": "14:00" },
-    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Thursday", "opens": "07:30", "closes": "14:00" }
-  ]
-}
-</script>
-<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
-<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
-<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-<a class="skip-link" href="#main">Zum Inhalt springen</a>
-
-<header class="site-header">
-  <div class="container nav">
-    <a class="brand" href="index.html">
-      <img src="images/logo.png" alt="Dr. Egarter-Scheiflinger Logo">
-      <span class="brand-name visually-hidden">Dr. Karin Egarter-Scheiflinger</span>
-    </a>
-    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-panel" aria-label="Menü öffnen">
-      <svg class="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
-      <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-    </button>
-    <nav id="nav-panel" class="nav-panel" aria-label="Hauptnavigation">
-      <ul class="nav-links">
-        <li><a href="index.html" aria-current="page">Startseite</a></li>
-        <li><a href="leistungen.html">Leistungen</a></li>
-        <li><a href="ueber-mich.html">Über mich</a></li>
-        <li><a href="kontakt.html">Kontakt</a></li>
-      </ul>
-      <div class="nav-cta">
-        <a class="btn btn-primary" href="kontakt.html#termin">Termin buchen</a>
-      </div>
-    </nav>
-  </div>
-</header>
-
-<main id="main">
+---
+layout: base.njk
+title: "Dr. Karin Egarter-Scheiflinger | Wahlarztordination für Innere Medizin, Nierengesundheit & Bluthochdruck in Spittal/Drau"
+description: "Wahlarztordination von Dr. Karin Egarter-Scheiflinger in Spittal/Drau. Fachärztin für Innere Medizin, Nierengesundheit und Bluthochdruck sowie Allgemeinmedizin. Persönliche Betreuung, moderne Diagnostik."
+currentPage: "index.html"
+permalink: "index.html"
+extraHead: |
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Physician",
+    "name": "Dr. Karin Egarter-Scheiflinger",
+    "image": "https://www.dr-egarter-scheiflinger.at/images/portrait.jpg",
+    "medicalSpecialty": ["Internal Medicine", "Nephrology"],
+    "description": "Wahlarztordination für Innere Medizin, Nierengesundheit und Bluthochdruck sowie Allgemeinmedizin in Spittal/Drau.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Tirolerstraße 18/1",
+      "addressLocality": "Spittal an der Drau",
+      "postalCode": "9800",
+      "addressCountry": "AT"
+    },
+    "telephone": "+43 4762 41952",
+    "email": "ordination@dr-egarter-scheiflinger.at",
+    "url": "https://www.dr-egarter-scheiflinger.at/",
+    "isAcceptingNewPatients": true,
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Monday", "opens": "07:30", "closes": "14:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Tuesday", "opens": "07:30", "closes": "13:30" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Tuesday", "opens": "14:00", "closes": "18:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Wednesday", "opens": "07:30", "closes": "14:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Thursday", "opens": "07:30", "closes": "14:00" }
+    ]
+  }
+  </script>
+---
 
   <!-- Hero Slideshow -->
   <div class="hero-slideshow" role="region" aria-label="Impressionen aus der Ordination">
@@ -238,53 +206,3 @@
       </div>
     </div>
   </div>
-
-</main>
-
-<footer class="site-footer">
-  <div class="container footer-grid">
-    <div class="footer-col">
-      <h3>Ordination</h3>
-      <address>
-        Dr. Karin Egarter-Scheiflinger<br>
-        Tirolerstraße 18/1<br>
-        9800 Spittal/Drau
-      </address>
-      <p style="margin-top:10px;">Wahlarztordination für Innere Medizin, Nierengesundheit &amp; Bluthochdruck</p>
-    </div>
-    <div class="footer-col">
-      <h3>Ordinationszeiten</h3>
-      <table class="footer-hours">
-        <tr><td>Montag</td><td>7:30–14 Uhr</td></tr>
-        <tr><td>Dienstag</td><td>7:30–13:30 &amp; 14–18 Uhr</td></tr>
-        <tr><td>Mittwoch</td><td>7:30–14 Uhr</td></tr>
-        <tr><td>Donnerstag</td><td>7:30–14 Uhr</td></tr>
-      </table>
-      <p style="margin-top:8px; font-size:0.85rem;">und nach telefonischer Vereinbarung</p>
-    </div>
-    <div class="footer-col">
-      <h3>Navigation</h3>
-      <ul class="footer-links">
-        <li><a href="index.html">Startseite</a></li>
-        <li><a href="leistungen.html">Leistungen</a></li>
-        <li><a href="ueber-mich.html">Über mich</a></li>
-        <li><a href="kontakt.html">Kontakt</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="container footer-bottom">
-    <span>© <span id="footer-year">2026</span> Dr. Karin Egarter-Scheiflinger</span>
-    <span><a href="impressum.html">Impressum</a> &nbsp;·&nbsp; <a href="datenschutz.html">Datenschutz</a></span>
-  </div>
-</footer>
-
-<div class="cookie-banner" role="dialog" aria-label="Cookie-Hinweis">
-  <p>Diese Website verwendet nur technisch notwendige Cookies sowie Google Maps zur Anzeige der Anfahrt. Weitere Informationen finden Sie in unserer <a href="datenschutz.html">Datenschutzerklärung</a>.</p>
-  <div class="cookie-banner-actions">
-    <button type="button" class="btn btn-primary btn-sm cookie-accept">Verstanden</button>
-  </div>
-</div>
-
-<script src="js/main.js"></script>
-</body>
-</html>

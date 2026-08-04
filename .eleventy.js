@@ -13,7 +13,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("robots.txt");
   eleventyConfig.addPassthroughCopy("sitemap.xml");
   // Pages not yet converted to .njk templates — passed through unmodified until migrated.
-  eleventyConfig.addPassthroughCopy("index.html");
   eleventyConfig.addPassthroughCopy("leistungen.html");
 
   return {
