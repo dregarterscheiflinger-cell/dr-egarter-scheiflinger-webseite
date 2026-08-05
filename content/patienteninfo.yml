@@ -20,4 +20,4 @@ downloads:
   lede: "Formulare zum Herunterladen und Vorbereiten für Ihren Besuch."
   items:
     - label: "Patientendatenblatt"
-      file: ""
+      file: "images/downloads/patientendatenblatt.pdf"
