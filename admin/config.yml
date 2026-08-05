@@ -12,8 +12,8 @@ logo:
   src: "/images/logo.png"
   show_in_header: true
 
-media_folder: "images/uploads"
-public_folder: "/images/uploads"
+media_folder: "images"
+public_folder: "/images"
 
 # Wiederverwendbare Feld-Definitionen (YAML-Anker)
 icon_options: &icon_options
@@ -345,6 +345,7 @@ collections:
     format: "yaml"
     identifier_field: title
     summary: "{{title}}"
+    thumbnail: image
     fields:
       - { name: order, label: "Reihenfolge (1, 2, 3, …)", widget: number, value_type: int }
       - { name: id, label: "Technische ID (nicht ändern – wird für Links verwendet)" }
