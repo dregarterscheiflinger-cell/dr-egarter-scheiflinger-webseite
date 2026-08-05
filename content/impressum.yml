@@ -1,6 +1,6 @@
 medieninhaberin:
   name: "Dr. Karin Egarter-Scheiflinger"
-  taetigkeit: "Fachärztin für Innere Medizin, Nephrologie und Hypertensiologie sowie Allgemein- und Familienmedizin"
+  taetigkeit: "Fachärztin für Innere Medizin, Nephrologie sowie Allgemein- und Familienmedizin"
   strasse: "Tirolerstraße 18/1"
   ort: "9800 Spittal/Drau, Österreich"
 
@@ -9,7 +9,7 @@ kontakt:
   email: "ordination@dr-egarter-scheiflinger.at"
 
 berufsrecht:
-  berufsbezeichnung: "Ärztin für Allgemeinmedizin, Fachärztin für Innere Medizin, Fachärztin für Nephrologie und Hypertensiologie"
+  berufsbezeichnung: "Ärztin für Allgemeinmedizin, Fachärztin für Innere Medizin, Fachärztin für Nephrologie"
   verliehen_in: "Österreich"
   kammer: "Ärztekammer für Kärnten, St. Veiterstraße 34, 9020 Klagenfurt"
   vorschriften_text: 'Ärztegesetz 1998 (ÄrzteG), abrufbar unter <a href="https://www.ris.bka.gv.at" target="_blank" rel="noopener" style="text-decoration:underline;">www.ris.bka.gv.at</a>'

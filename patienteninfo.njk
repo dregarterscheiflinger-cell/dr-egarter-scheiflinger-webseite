@@ -1,0 +1,70 @@
+---
+layout: base.njk
+title: "Patienteninfo | Dr. Karin Egarter-Scheiflinger"
+description: "E-Card, Rezeptbestellung, Wahlarzt-Abrechnung und Downloads für Patientinnen und Patienten der Wahlarztordination Dr. Egarter-Scheiflinger."
+currentPage: "patienteninfo.html"
+permalink: "patienteninfo.html"
+---
+  <div class="container page-header">
+    <span class="eyebrow">Patienteninfo</span>
+    <h1>{{ patienteninfo.page_header.heading }}</h1>
+    <p class="lede">{{ patienteninfo.page_header.lede }}</p>
+  </div>
+
+  <!-- E-Card + Rezepte -->
+  <div class="section section--tight">
+    <div class="container">
+      <div class="split">
+        <div class="info-box">
+          <h3 style="margin-bottom:10px;">{{ patienteninfo.ecard.heading }}</h3>
+          <p style="color:var(--gray-700);">{{ patienteninfo.ecard.text }}</p>
+          <div class="notice" style="margin-top:16px;">
+            {% icon "alert-circle", {size: 20, strokeWidth: 1.8} %}
+            <span>{{ patienteninfo.ecard.notice }}</span>
+          </div>
+        </div>
+        <div class="info-box">
+          <h3 style="margin-bottom:10px;">{{ patienteninfo.rezepte.heading }}</h3>
+          <p style="color:var(--gray-700);">{{ patienteninfo.rezepte.text | safe }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Wahlarzt Erklärung -->
+  <div class="section section--gray">
+    <div class="container">
+      <div class="split">
+        <div>
+          <span class="eyebrow">Wahlarztordination</span>
+          <h2>{{ patienteninfo.wahlarzt.heading }}</h2>
+        </div>
+        <div>
+          <p>{{ patienteninfo.wahlarzt.text }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Downloads -->
+  <div class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Formulare</span>
+        <h2>{{ patienteninfo.downloads.heading }}</h2>
+        <p class="lede">{{ patienteninfo.downloads.lede }}</p>
+      </div>
+      <ul class="check-list">
+        {%- for item in patienteninfo.downloads.items %}
+        <li>
+          {% icon "file-text", {size: 20, strokeWidth: 1.8} %}
+          {%- if item.file %}
+          <span><a href="{{ item.file }}" style="text-decoration:underline;" target="_blank" rel="noopener">{{ item.label }} (PDF)</a></span>
+          {%- else %}
+          <span>{{ item.label }} (PDF) — <em>folgt in Kürze</em></span>
+          {%- endif %}
+        </li>
+        {%- endfor %}
+      </ul>
+    </div>
+  </div>

@@ -25,5 +25,7 @@ nav:
     url: "leistungen.html"
   - label: "Über mich"
     url: "ueber-mich.html"
+  - label: "Patienteninfo"
+    url: "patienteninfo.html"
   - label: "Kontakt"
     url: "kontakt.html"

@@ -220,6 +220,7 @@ singletons:
         fields:
           - { name: telefon_hinweis, label: "Hinweis unter der Telefonnummer" }
           - { name: email_hinweis, label: "Hinweis unter der E-Mail-Adresse", widget: text }
+          - { name: oeffnungszeiten_kompakt, label: "Öffnungszeiten (kurz, wie auf der Startseite; HTML wie <br> erlaubt)", widget: text }
           - { name: oeffnungszeiten_hinweis, label: "Hinweis unter den Öffnungszeiten" }
       - name: karte
         label: "Karte"
@@ -234,20 +235,50 @@ singletons:
         fields:
           - { name: lede, label: "Text über dem Terminkalender", widget: text }
           - { name: placeholder_heading, label: "Platzhalter-Überschrift" }
-      - name: organisatorisches
-        label: "Organisatorisches"
+
+  - name: patienteninfo
+    label: "Patienteninfo"
+    file: "content/patienteninfo.yml"
+    icon: info
+    fields:
+      - name: page_header
+        label: "Seitenkopf"
         widget: object
         fields:
           - { name: heading, label: "Überschrift" }
-          - { name: ecard_text, label: "E-Card-Text", widget: text }
-          - { name: ecard_notice, label: "E-Card-Hinweisbox", widget: text }
-          - { name: rezept_text, label: "Rezeptbestellung-Text (HTML/Link erlaubt)", widget: text }
+          - { name: lede, label: "Anmoderation", widget: text }
+      - name: ecard
+        label: "E-Card"
+        widget: object
+        fields:
+          - { name: heading, label: "Überschrift" }
+          - { name: text, label: "Text", widget: text }
+          - { name: notice, label: "Hinweisbox", widget: text }
+      - name: rezepte
+        label: "Rezeptbestellung"
+        widget: object
+        fields:
+          - { name: heading, label: "Überschrift" }
+          - { name: text, label: "Text (HTML/Link erlaubt)", widget: text }
       - name: wahlarzt
         label: "Wahlarzt-Erklärung"
         widget: object
         fields:
           - { name: heading, label: "Überschrift" }
           - { name: text, label: "Text", widget: text }
+      - name: downloads
+        label: "Downloads"
+        widget: object
+        fields:
+          - { name: heading, label: "Überschrift" }
+          - { name: lede, label: "Anmoderation", widget: text }
+          - name: items
+            label: "Formulare"
+            widget: list
+            summary: "{{fields.label}}"
+            fields:
+              - { name: label, label: "Bezeichnung (ohne \"PDF\", das wird automatisch ergänzt)" }
+              - { name: file, label: "PDF-Datei (leer lassen, wenn noch nicht vorhanden – zeigt dann „folgt in Kürze“)", widget: file, required: false }
 
   - name: impressum
     label: "Impressum"

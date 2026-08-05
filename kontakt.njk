@@ -28,6 +28,14 @@ permalink: "kontakt.html"
           </div>
         </div>
         <div class="contact-line">
+          <svg class="icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <div>
+            <strong>Ordinationszeiten</strong>
+            <p style="margin-top:4px;">{{ kontakt.kontaktdaten.oeffnungszeiten_kompakt | safe }}</p>
+            <p style="margin-top:8px; font-size:0.85rem; color:var(--gray-500);">{{ kontakt.kontaktdaten.oeffnungszeiten_hinweis }}</p>
+          </div>
+        </div>
+        <div class="contact-line">
           <svg class="icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
           <div>
             <strong>Telefon</strong>
@@ -41,18 +49,6 @@ permalink: "kontakt.html"
             <strong>E-Mail</strong>
             <a href="mailto:{{ site.email }}">{{ site.email }}</a>
             <span style="display:block; font-size:0.82rem; color:var(--gray-500); margin-top:6px;">{{ kontakt.kontaktdaten.email_hinweis }}</span>
-          </div>
-        </div>
-        <div class="contact-line">
-          <svg class="icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          <div>
-            <strong>Ordinationszeiten</strong>
-            <table class="hours-table" style="margin-top:6px;">
-              {%- for h in site.hours %}
-              <tr><td>{{ h.day }}</td><td>{{ h.time }}</td></tr>
-              {%- endfor %}
-            </table>
-            <p style="margin-top:8px; font-size:0.85rem; color:var(--gray-500);">{{ kontakt.kontaktdaten.oeffnungszeiten_hinweis }}</p>
           </div>
         </div>
       </div>
@@ -83,46 +79,6 @@ permalink: "kontakt.html"
         {% icon "calendar", {size: 34, strokeWidth: 1.7} %}
         <h3>{{ kontakt.booking.placeholder_heading }}</h3>
         <code><!-- TODO: TermiOn Embed-/iFrame-Code hier einfügen --></code>
-      </div>
-    </div>
-  </div>
-
-  <!-- Organisatorisches -->
-  <div class="section">
-    <div class="container">
-      <div class="section-head">
-        <span class="eyebrow">Organisatorisches</span>
-        <h2>{{ kontakt.organisatorisches.heading }}</h2>
-      </div>
-
-      <div class="split">
-        <div class="info-box">
-          <h3 style="margin-bottom:10px;">E-Card</h3>
-          <p style="color:var(--gray-700);">{{ kontakt.organisatorisches.ecard_text }}</p>
-          <div class="notice" style="margin-top:16px;">
-            {% icon "alert-circle", {size: 20, strokeWidth: 1.8} %}
-            <span>{{ kontakt.organisatorisches.ecard_notice }}</span>
-          </div>
-        </div>
-        <div class="info-box">
-          <h3 style="margin-bottom:10px;">Rezeptbestellung</h3>
-          <p style="color:var(--gray-700);">{{ kontakt.organisatorisches.rezept_text | safe }}</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Wahlarzt Erklärung -->
-  <div class="section section--gray">
-    <div class="container">
-      <div class="split">
-        <div>
-          <span class="eyebrow">Wahlarztordination</span>
-          <h2>{{ kontakt.wahlarzt.heading }}</h2>
-        </div>
-        <div>
-          <p>{{ kontakt.wahlarzt.text }}</p>
-        </div>
       </div>
     </div>
   </div>

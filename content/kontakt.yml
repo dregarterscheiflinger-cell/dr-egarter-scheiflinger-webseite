@@ -8,6 +8,7 @@ hero_image_alt: "Dr. Karin Egarter-Scheiflinger"
 kontaktdaten:
   telefon_hinweis: "Terminvereinbarung Mo–Do, 10–12 Uhr"
   email_hinweis: "Bitte nur für Terminvergabe sowie Fragen zu Terminen & Ordinationszeiten – medizinische Anfragen können aus medizinischen und datenschutzrechtlichen Gründen per E-Mail leider nicht beantwortet werden."
+  oeffnungszeiten_kompakt: "Mo, Mi, Do 7:30–14 Uhr<br>Di 7:30–13:30 & 14–18 Uhr"
   oeffnungszeiten_hinweis: "und nach telefonischer Vereinbarung"
 
 karte:
@@ -18,13 +19,3 @@ karte:
 booking:
   lede: "Um den Ablauf für uns alle möglichst zu optimieren, ist eine Terminvereinbarung nur unter der Telefonnummer 04762/41952 von Mo–Do, 10–12 Uhr möglich. Alternativ kann eine Online-Terminbuchung über den Online-Terminkalender gemacht werden."
   placeholder_heading: "Online-Terminkalender folgt in Kürze"
-
-organisatorisches:
-  heading: "E-Card, Rezepte & Terminvergabe"
-  ecard_text: "Die E-Card ist bei jedem Besuch in der Ordination verpflichtend mitzubringen und zu stecken."
-  ecard_notice: "Aufgrund neuer regulatorischer Anforderungen der Bundesregierung gilt dies ab 1. Jänner 2026."
-  rezept_text: 'Rezepte können telefonisch oder bevorzugt per E-Mail an <a href="mailto:ordination@dr-egarter-scheiflinger.at" style="text-decoration:underline;">ordination@dr-egarter-scheiflinger.at</a> bestellt werden. Für eine Weiterverordnung ist es notwendig, 1× im Quartal persönlich zu den Ordinationszeiten in die Ordination zu kommen, um die E-Card zu stecken – das ist ohne Terminvereinbarung möglich. Es wird eine Pauschale von 5 € pro Rezept bzw. 10 € für ein bewilligungspflichtiges Rezept verrechnet.'
-
-wahlarzt:
-  heading: "Wahlärztin ohne Kassenvertrag"
-  text: "Ich bin als Wahlärztin ohne Kassenvertrag tätig. Das bedeutet, dass wir unsere ärztlichen Leistungen per Honorarnote direkt mit Ihnen verrechnen und für Sie die Einreichung bei Ihrer Krankenkasse übernehmen. Von dieser erhalten Sie dann einen Teil der Kosten rückerstattet. Sollten Sie privat zusatzversichert sein, können Sie sogar mit einer Rückerstattung in Höhe der Gesamtkosten rechnen."
