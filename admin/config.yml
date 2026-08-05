@@ -81,6 +81,8 @@ singletons:
           - { name: label, label: "Beschriftung" }
           - { name: url, label: "Ziel-Seite (z. B. index.html)" }
 
+  - divider: true
+
   - name: home
     label: "Startseite"
     file: "content/home.yml"
@@ -201,41 +203,6 @@ singletons:
           - { name: heading, label: "Überschrift" }
           - { name: text, label: "Text" }
 
-  - name: kontakt
-    label: "Kontakt"
-    file: "content/kontakt.yml"
-    icon: mail
-    fields:
-      - name: page_header
-        label: "Seitenkopf"
-        widget: object
-        fields:
-          - { name: heading, label: "Überschrift" }
-          - { name: lede, label: "Anmoderation", widget: text }
-      - { name: hero_image, label: "Titelbild", widget: image }
-      - { name: hero_image_alt, label: "Bildbeschreibung" }
-      - name: kontaktdaten
-        label: "Kontaktdaten-Hinweise"
-        widget: object
-        fields:
-          - { name: telefon_hinweis, label: "Hinweis unter der Telefonnummer" }
-          - { name: email_hinweis, label: "Hinweis unter der E-Mail-Adresse", widget: text }
-          - { name: oeffnungszeiten_kompakt, label: "Öffnungszeiten (kurz, wie auf der Startseite; HTML wie <br> erlaubt)", widget: text }
-          - { name: oeffnungszeiten_hinweis, label: "Hinweis unter den Öffnungszeiten" }
-      - name: karte
-        label: "Karte"
-        widget: object
-        fields:
-          - { name: iframe_src, label: "Google-Maps-Einbettungslink (nicht ändern, außer die Adresse ändert sich)" }
-          - { name: iframe_title, label: "Kartentitel (für Barrierefreiheit)" }
-          - { name: hinweis, label: "Hinweistext unter der Karte (HTML/Link erlaubt)", widget: text }
-      - name: booking
-        label: "Terminbuchung"
-        widget: object
-        fields:
-          - { name: lede, label: "Text über dem Terminkalender", widget: text }
-          - { name: placeholder_heading, label: "Platzhalter-Überschrift" }
-
   - name: patienteninfo
     label: "Patienteninfo"
     file: "content/patienteninfo.yml"
@@ -279,6 +246,43 @@ singletons:
             fields:
               - { name: label, label: "Bezeichnung (ohne \"PDF\", das wird automatisch ergänzt)" }
               - { name: file, label: "PDF-Datei (leer lassen, wenn noch nicht vorhanden – zeigt dann „folgt in Kürze“)", widget: file, required: false }
+
+  - name: kontakt
+    label: "Kontakt"
+    file: "content/kontakt.yml"
+    icon: mail
+    fields:
+      - name: page_header
+        label: "Seitenkopf"
+        widget: object
+        fields:
+          - { name: heading, label: "Überschrift" }
+          - { name: lede, label: "Anmoderation", widget: text }
+      - { name: hero_image, label: "Titelbild", widget: image }
+      - { name: hero_image_alt, label: "Bildbeschreibung" }
+      - name: kontaktdaten
+        label: "Kontaktdaten-Hinweise"
+        widget: object
+        fields:
+          - { name: telefon_hinweis, label: "Hinweis unter der Telefonnummer" }
+          - { name: email_hinweis, label: "Hinweis unter der E-Mail-Adresse", widget: text }
+          - { name: oeffnungszeiten_kompakt, label: "Öffnungszeiten (kurz, wie auf der Startseite; HTML wie <br> erlaubt)", widget: text }
+          - { name: oeffnungszeiten_hinweis, label: "Hinweis unter den Öffnungszeiten" }
+      - name: karte
+        label: "Karte"
+        widget: object
+        fields:
+          - { name: iframe_src, label: "Google-Maps-Einbettungslink (nicht ändern, außer die Adresse ändert sich)" }
+          - { name: iframe_title, label: "Kartentitel (für Barrierefreiheit)" }
+          - { name: hinweis, label: "Hinweistext unter der Karte (HTML/Link erlaubt)", widget: text }
+      - name: booking
+        label: "Terminbuchung"
+        widget: object
+        fields:
+          - { name: lede, label: "Text über dem Terminkalender", widget: text }
+          - { name: placeholder_heading, label: "Platzhalter-Überschrift" }
+
+  - divider: true
 
   - name: impressum
     label: "Impressum"
