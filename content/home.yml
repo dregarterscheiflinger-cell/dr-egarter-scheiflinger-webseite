@@ -28,15 +28,7 @@ leistungen_teaser:
   heading: Ein breites Spektrum der Inneren Medizin
   lede: Von der Vorsorge bis zur individuellen Therapie – ich nehme mir Zeit für ein persönliches Gespräch und begleite Sie mit langjähriger Erfahrung auf dem gesamten Gebiet der Inneren Medizin.
   cards:
-    - icon: heart
-      title: Herz &amp; Kreislauf
-      text: Herzschwäche, KHK, Bluthochdruck, Rhythmusstörungen, Herzklappenerkrankungen, Fettstoffwechselerkrankungen
-      link: leistungen.html#internistische-leistungen
     - icon: droplet
-      title: Nierengesundheit
-      text: Diagnose und Behandlung von Nierenerkrankungen und Bluthochdruck.
-      link: leistungen.html#nierengesundheit
-    - icon: check-circle
       title: Vorsorge
       text: Jährliche Vorsorge- und Gesundenuntersuchung, Manager-Check, OP-Freigabe.
       link: leistungen.html#vorsorge
@@ -44,6 +36,14 @@ leistungen_teaser:
       title: Diagnostik
       text: Ultraschall, Ruhe- &amp; Belastungs-EKG, Langzeit-EKG, Spirometrie, Labor.
       link: leistungen.html#diagnostik
+    - icon: heart
+      title: Erkrankungen der Inneren Medizin
+      text: Herz-Kreislauf, Bluthochdruck, Diabetes, Magen-Darmerkrankungen, Stoffwechselstörungen etc.
+      link: leistungen.html#internistische-leistungen
+    - icon: droplet
+      title: Nierengesundheit
+      text: Diagnose und Behandlung von Nierenerkrankungen und Bluthochdruck.
+      link: leistungen.html#nierengesundheit
 erstbesuch:
   heading: Ablauf Ihres ersten Besuches
   text: Nach der Terminvereinbarung nehme ich mir bei Ihrem ersten Besuch ausführlich Zeit für ein persönliches Anamnesegespräch und eine gründliche körperliche Untersuchung. Gemeinsam besprechen wir Ihre Beschwerden, bereits vorliegende Befunde und die nächsten Schritte – von weiterführender Diagnostik bis zur individuellen Therapieplanung. So erhalten Sie von Anfang an eine klare Einschätzung Ihrer gesundheitlichen Situation.
