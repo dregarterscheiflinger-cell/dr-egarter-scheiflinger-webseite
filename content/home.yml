@@ -28,7 +28,7 @@ leistungen_teaser:
   heading: Ein breites Spektrum der Inneren Medizin
   lede: Von der Vorsorge bis zur individuellen Therapie – ich nehme mir Zeit für ein persönliches Gespräch und begleite Sie mit langjähriger Erfahrung auf dem gesamten Gebiet der Inneren Medizin.
   cards:
-    - icon: droplet
+    - icon: clock
       title: Vorsorge
       text: Jährliche Vorsorge- und Gesundenuntersuchung, Manager-Check, OP-Freigabe.
       link: leistungen.html#vorsorge
