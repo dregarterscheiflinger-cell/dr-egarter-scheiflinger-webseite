@@ -1,21 +1,17 @@
 page_header:
-  heading: "Wir sind für Sie da"
-  lede: "Ob Terminvereinbarung, Rezeptbestellung oder allgemeine Fragen – hier finden Sie alle Kontaktmöglichkeiten und Informationen rund um Ihren Besuch."
-
-hero_image: "images/breit.jpg"
-hero_image_alt: "Dr. Karin Egarter-Scheiflinger"
-
+  heading: Wir sind für Sie da
+  lede: Ob Terminvereinbarung, Rezeptbestellung oder allgemeine Fragen – hier finden Sie alle Kontaktmöglichkeiten und Informationen rund um Ihren Besuch.
+hero_image: images/breit.jpg
+hero_image_alt: Dr. Karin Egarter-Scheiflinger
 kontaktdaten:
-  telefon_hinweis: "Terminvereinbarung Mo–Do, 10–12 Uhr"
-  email_hinweis: "Bitte nur für Terminvergabe sowie Fragen zu Terminen & Ordinationszeiten – medizinische Anfragen können aus medizinischen und datenschutzrechtlichen Gründen per E-Mail leider nicht beantwortet werden."
-  oeffnungszeiten_kompakt: "Mo, Mi, Do 7:30–14 Uhr<br>Di 7:30–13:30 & 14–18 Uhr"
-  oeffnungszeiten_hinweis: "und nach telefonischer Vereinbarung"
-
+  telefon_hinweis: Terminvereinbarung Mo–Do, 10–12 Uhr
+  email_hinweis: Bitte nur für Terminvergabe sowie Fragen zu Terminen & Ordinationszeiten – medizinische Anfragen können aus medizinischen und datenschutzrechtlichen Gründen per E-Mail leider nicht beantwortet werden.
+  oeffnungszeiten_kompakt: Mo 8 bis 18 Uhr<br>Di -Do 8-14 Uhr
+  oeffnungszeiten_hinweis: und nach telefonischer Vereinbarung
 karte:
-  iframe_src: "https://www.google.com/maps?q=Tirolerstra%C3%9Fe+18%2F1,+9800+Spittal+an+der+Drau,+%C3%96sterreich&output=embed"
-  iframe_title: "Standort der Ordination auf Google Maps"
-  hinweis: 'Beim Laden der Karte wird eine Verbindung zu Google-Servern hergestellt. Details dazu finden Sie in unserer <a href="datenschutz.html" style="text-decoration:underline;">Datenschutzerklärung</a>.'
-
+  iframe_src: https://www.google.com/maps?q=Tirolerstra%C3%9Fe+18%2F1,+9800+Spittal+an+der+Drau,+%C3%96sterreich&output=embed
+  iframe_title: Standort der Ordination auf Google Maps
+  hinweis: Beim Laden der Karte wird eine Verbindung zu Google-Servern hergestellt. Details dazu finden Sie in unserer <a href="datenschutz.html" style="text-decoration:underline;">Datenschutzerklärung</a>.
 booking:
-  lede: "Um den Ablauf für uns alle möglichst zu optimieren, ist eine Terminvereinbarung nur unter der Telefonnummer 04762/41952 von Mo–Do, 10–12 Uhr möglich. Alternativ kann eine Online-Terminbuchung über den Online-Terminkalender gemacht werden."
-  placeholder_heading: "Online-Terminkalender folgt in Kürze"
+  lede: Terminvereinbarung unter der Telefonnummer 04762/41952 von Mo–Do, 10–12 Uhr. Alternativ kann eine Online-Terminbuchung über den Online-Terminkalender gemacht werden.
+  placeholder_heading: Online-Terminkalender folgt in Kürze
