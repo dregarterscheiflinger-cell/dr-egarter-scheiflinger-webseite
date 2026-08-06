@@ -11,13 +11,13 @@ phone_tel: '+43476241952'
 email: ordination@dr-egarter-scheiflinger.at
 hours:
   - day: Montag
-    time: 7:30–14 Uhr
+    time: 8-18 Uhr
   - day: Dienstag
-    time: 7:30–13:30 & 14–18 Uhr
+    time: 8-14 Uhr
   - day: Mittwoch
-    time: 7:30–14 Uhr
+    time: 8-14 Uhr
   - day: Donnerstag
-    time: 7:30–14 Uhr
+    time: 8-14 Uhr
 nav:
   - label: Startseite
     url: index.html
