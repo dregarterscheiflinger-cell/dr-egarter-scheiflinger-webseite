@@ -2,18 +2,20 @@ order: 1
 id: internistische-leistungen
 open: true
 icon: heart
-title: "Behandlung internistischer Fragestellungen"
-image: "images/leistungen/internistisch.jpg"
-image_alt: "Ärztin mit Stethoskop bei der Untersuchung (Symbolbild)"
+title: Behandlung internistischer Fragestellungen
+image: /images/IMG_4992.jpg
+image_alt: Ärztin mit Stethoskop bei der Untersuchung (Symbolbild)
 intro:
-  - "Durch meine langjährige Tätigkeit als Internistin im Krankenhaus hatte ich täglich mit Erkrankungen des gesamten Spektrums der Inneren Medizin zu tun – ob Herz und Kreislauf, Diabetes, Bluthochdruck, Magen-Darmerkrankungen oder mein Spezialgebiet, die Nieren. Diese langjährige praktische Erfahrung sowie die laufende Teilnahme an Kongressen und Fortbildungen ermöglicht es mir, Sie nach den neuesten medizinischen Richtlinien zu behandeln."
+  - |-
+    Nach langjähriger Tätigkeit als Internistin im Krankenhaus, bis 2025 Primaria der Internen Abteilung und Leitung der Dialyse und Nierenambulanz war ich täglich mit Erkrankungen des gesamten Spektrums der Inneren Medizin befasst - egal ob Herz- Kreislauferkrankungen, Diabetes, Bluthochdruck, Magen-Darmerkrankungen oder auch Nierenerkrankungen. <br>
+    Meine jahrelange praktische Erfahrung sowie die laufende Teilnahme an Kongressen und Fortbildungen ermöglichen mir eine Behandlung nach den neuesten medizinischen Erkenntnissen und wissenschaftlichen Leitlinien.<br>
 krankheitsbilder:
-  - "Herzerkrankungen (Herzschwäche, Rhythmusstörungen, Herzklappenerkrankungen, KHK)"
-  - "Bluthochdruck"
-  - "Diabetes & Stoffwechselerkrankungen"
-  - "Nierenerkrankungen"
-  - "Magen-Darmbeschwerden"
-  - "Gallengangs- & Lebererkrankungen"
-  - "Schilddrüsenerkrankungen"
-  - "Bluterkrankungen"
-  - "Osteoporose"
+  - Herzerkrankungen (Herzschwäche, Rhythmusstörungen, Herzklappenerkrankungen, KHK)
+  - Bluthochdruck
+  - Diabetes & Stoffwechselerkrankungen
+  - Nierenerkrankungen
+  - Magen-Darmbeschwerden
+  - Gallengangs- & Lebererkrankungen
+  - Schilddrüsenerkrankungen
+  - Bluterkrankungen
+  - Osteoporose
