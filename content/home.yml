@@ -30,11 +30,11 @@ leistungen_teaser:
   cards:
     - icon: heart
       title: Herz &amp; Kreislauf
-      text: Herzschwäche, Rhythmusstörungen, Herzklappenerkrankungen, KHK und Bluthochdruck.
+      text: Herzschwäche, KHK, Bluthochdruck, Rhythmusstörungen, Herzklappenerkrankungen, Fettstoffwechselerkrankungen
       link: leistungen.html#internistische-leistungen
     - icon: droplet
       title: Nierengesundheit
-      text: 'Mein Spezialgebiet: Diagnose und Behandlung von Nierenerkrankungen und Bluthochdruck.'
+      text: Diagnose und Behandlung von Nierenerkrankungen und Bluthochdruck.
       link: leistungen.html#nierengesundheit
     - icon: check-circle
       title: Vorsorge
@@ -42,10 +42,10 @@ leistungen_teaser:
       link: leistungen.html#vorsorge
     - icon: activity
       title: Diagnostik
-      text: Ultraschall, Echokardiographie, Ruhe- &amp; Belastungs-EKG, Langzeit-EKG, Spirometrie, Labor.
+      text: Ultraschall, Ruhe- &amp; Belastungs-EKG, Langzeit-EKG, Spirometrie, Labor.
       link: leistungen.html#diagnostik
 erstbesuch:
-  heading: So läuft Ihr erster Besuch ab
+  heading: Ablauf Ihres ersten Besuches
   text: Nach der Terminvereinbarung nehme ich mir bei Ihrem ersten Besuch ausführlich Zeit für ein persönliches Anamnesegespräch und eine gründliche körperliche Untersuchung. Gemeinsam besprechen wir Ihre Beschwerden, bereits vorliegende Befunde und die nächsten Schritte – von weiterführender Diagnostik bis zur individuellen Therapieplanung. So erhalten Sie von Anfang an eine klare Einschätzung Ihrer gesundheitlichen Situation.
   image: images/erstbesuch.jpg
   image_alt: Persönliches Gespräch zwischen Ärztin und Patientin (Symbolbild)
