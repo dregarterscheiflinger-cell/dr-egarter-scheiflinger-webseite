@@ -4,8 +4,8 @@ page_header:
 hero_image: images/breit.jpg
 hero_image_alt: Dr. Karin Egarter-Scheiflinger
 kontaktdaten:
-  telefon_hinweis: Terminvereinbarung Mo–Do, 10–12 Uhr
-  email_hinweis: Bitte nur für Terminvergabe sowie Fragen zu Terminen & Ordinationszeiten oder Rezeptanfragen– medizinische Anfragen können aus medizinischen und datenschutzrechtlichen Gründen per E-Mail leider nicht beantwortet werden.
+  telefon_hinweis: Terminvereinbarung Mo–Do, 12-14 Uhr
+  email_hinweis: Medizinische Anfragen können aus medizinischen und datenschutzrechtlichen Gründen per E-Mail leider nicht beantwortet werden.
   oeffnungszeiten_kompakt: Mo 8 bis 18 Uhr<br>Di -Do 8-14 Uhr
   oeffnungszeiten_hinweis: und nach telefonischer Vereinbarung
 karte:
@@ -13,5 +13,5 @@ karte:
   iframe_title: Standort der Ordination auf Google Maps
   hinweis: Beim Laden der Karte wird eine Verbindung zu Google-Servern hergestellt. Details dazu finden Sie in unserer <a href="datenschutz.html" style="text-decoration:underline;">Datenschutzerklärung</a>.
 booking:
-  lede: Terminvereinbarung unter der Telefonnummer 04762/41952 von Mo–Do von 10–12 Uhr. <br>Alternativ gibt es die Möglichkeit einer Online-Terminbuchung über unsere Homepage.
+  lede: Terminvereinbarung unter der Telefonnummer 04762/41952 von Mo–Do von 12-14 Uhr. <br>Alternativ gibt es die Möglichkeit einer Online-Terminbuchung über unsere Homepage.
   placeholder_heading: Online-Terminkalender folgt in Kürze
