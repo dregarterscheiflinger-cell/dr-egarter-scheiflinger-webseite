@@ -2,8 +2,8 @@ order: 4
 id: op-freigabe
 open: false
 icon: file-text
-title: "OP-Freigabe"
-image: "images/leistungen/op-freigabe.jpg"
-image_alt: "Chirurgische Instrumente vor einer Operation (Symbolbild)"
+title: OP-Freigabe
+image: images/leistungen/op-freigabe.jpg
+image_alt: Chirurgische Instrumente vor einer Operation (Symbolbild)
 intro:
-  - "Vor geplanten Operationen wird eine internistische Operationsfreigabe vom Krankenhaus verlangt. Wir führen die dazu notwendigen Untersuchungen durch. Falls eine weiterführende Untersuchung (z. B. Lungenröntgen) notwendig ist, erhalten Sie bei Bedarf eine Überweisung. Von mir bekommen Sie anschließend eine internistische Stellungnahme bezüglich des Nutzen-Risiko-Verhältnisses vor dem geplanten operativen Eingriff."
+  - Vor geplanten Operationen wird häufig eine internistische Abklärung vom Krankenhaus gefordert. Wir führen die dazu notwendigen Untersuchungen direkt in unserer Ordination durch. Sollte eine weiterführende Untersuchung, beispielsweise ein Lungenröntgen, erforderlich sein, erhalten Sie bei Bedarf eine  entsprechende Überweisung. Anschließend erfolgt eine individuelle internistische Beurteilung des Nutzen-Risiko-Verhältnisses im Hinblick auf den geplanten operativen Eingriff.
