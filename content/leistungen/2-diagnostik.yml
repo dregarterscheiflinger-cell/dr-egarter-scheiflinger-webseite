@@ -16,17 +16,17 @@ gruppen:
       - titel: Langzeit-Blutdruckmessung
         text: Über 24 Stunden werden Ihre Blutdruckwerte automatisch gemessen. Diese Untersuchung zeigt, wie sich Ihr Blutdruck tagsüber, nachts und unter körperlicher Anstrengung verhält und ermöglicht eine gezielte Therapieanpassung.
       - titel: Langzeit-EKG
-        text: Das Langzeit-EKG zeichnet über 24–72 Stunden Ihre Herzaktivität auf. Damit lassen sich Herzrhythmusstörungen und Beschwerden wie Schwindel, Herzrasen oder Ohnmachtsanfälle abklären. Herzrhythmusstörungen treten oft unvermittelt auf und können in der „Momentaufnahme" des Ruhe-EKG nicht erfasst werden. Sie bekommen ein kleines Gerät in der Ordination angelegt und bringen es am Folgetag wieder zurück. Das Ergebnis wird dann von mir ausgewertet und mit Ihnen besprochen.
+        text: Das Langzeit-EKG zeichnet über 24–72 Stunden Ihre Herzaktivität auf. Damit lassen sich Herzrhythmusstörungen und Beschwerden wie Schwindel, Herzrasen oder Ohnmachtsanfälle abklären. Herzrhythmusstörungen treten oft unvermittelt auf und können in der „Momentaufnahme" des Ruhe-EKG nicht erfasst werden. Das kleine Messgerät wird bequem in unserer Ordination angelegt . Am nächsten Tag bringen Sie es einfach wieder zu uns zurück. Nach der Auswertung bespreche ich die Ergebnisse ausführliche mit Ihnen und beantworte gerne Ihre Fragen.
       - titel: Blutabnahme
-        text: Die Blutabnahme erfolgt direkt in unserer Ordination. Die Auswertung erfolgt in einem Labor in der Nähe. Dadurch können die meisten wichtigen Blutwerte bestimmt werden.
+        text: Die Blutabnahme führen wir direkt in unserer Ordination durch. Die  Proben werden anschließend zur Auswertung an ein nahegelegenes Labor übermittelt.. Damit lassen sich die wichtigsten Blutwerte zuverlässig bestimmen.
       - titel: Harn- und Stuhluntersuchungen
-        text: Stuhluntersuchungen dienen zur Abklärung von Verdauungsbeschwerden.<br> Eine Harnanalyse liefert wichtige Hinweise auf Erkrankungen der Nieren und der Harnblase.
+        text: Stuhluntersuchungen unterstützen die Abklärung verschiedener Verdauungsbeschwerden.<br> Eine Harnanalyse liefert wichtige Hinweise auf Erkrankungen der Nieren und der Harnblase.
   - unterpunkte:
       - titel: Ultraschall
         text: ''
         begriffsliste:
           - begriff: Echokardiographie (Herzultraschall)
-            beschreibung: Bei dieser Untersuchung wird das Herz in seiner Struktur und Funktion untersucht. Morphologie und Funktion der Herzklappen werden objektiviert.
+            beschreibung: Bei dieser Untersuchung wird das Herz in seiner Struktur und Funktion untersucht. Weiters werden Aussehen und Funktion der Herzklappen präzise beurteilt.
           - begriff: Sonographie des Abdomens
             beschreibung: Ultraschalluntersuchung der Oberbauchorgane und der großen Gefäße
           - begriff: Sonographie der Nieren
@@ -38,4 +38,4 @@ gruppen:
           - begriff: Sonographie der Beinvenen
             beschreibung: Sonographische Darstellung der tiefen Beinvenen zum Ausschluss einer Thrombose
       - titel: Spirometrie (Lungenfunktionstest)
-        text: Das ist ein diagnostisches Verfahren zur Messung der Lungenfunktion. Bei der Untersuchung wird über ein Mundstück, das mit den Lippen fest umschlossen wird, ein- und ausgeatmet. Dieses ist mit einem Messgerät verbunden. Ihre Nase wird während der Messung mit einer Nasenklemme verschlossen. Mit diesem Lungenfunktionstest lassen sich verschiedene Parameter bestimmen, die Aufschluss über das Vorliegen einer Atemwegs- oder Lungenerkrankung geben.
+        text: Das ist ein diagnostisches Verfahren zur Messung der Lungenfunktion. Bei der Untersuchung wird über ein Mundstück, das mit den Lippen fest umschlossen wird, ein- und ausgeatmet. Dies ist mit einem Messgerät verbunden. Ihre Nase wird während der Messung mit einer Nasenklemme verschlossen. Mit diesem Lungenfunktionstest lassen sich verschiedene Parameter bestimmen, die Aufschluss über das Vorliegen einer Atemwegs- oder Lungenerkrankung geben.
