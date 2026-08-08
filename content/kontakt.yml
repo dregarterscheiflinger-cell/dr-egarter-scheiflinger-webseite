@@ -1,6 +1,6 @@
 page_header:
-  heading: Wir sind für Sie da
-  lede: Ob Terminvereinbarung, Rezeptbestellung oder allgemeine Fragen – hier finden Sie alle Kontaktmöglichkeiten und Informationen rund um Ihren Besuch.
+  heading: Wir sind gerne für Sie da!
+  lede: Ob Terminvereinbarung, Rezeptbestellung oder allgemeine Fragen – hier finden Sie alle wichtigen Informationen und Kontaktmöglichkeiten auf einen Blick.
 hero_image: images/breit.jpg
 hero_image_alt: Dr. Karin Egarter-Scheiflinger
 kontaktdaten:
@@ -14,6 +14,6 @@ karte:
   hinweis: Beim Laden der Karte wird eine Verbindung zu Google-Servern hergestellt. Details dazu finden Sie in unserer <a href="datenschutz.html" style="text-decoration:underline;">Datenschutzerklärung</a>.
 booking:
   lede: |-
-    Terminvereinbarung unter der Telefonnummer 04762/41952 von Mo–Do von 12-14 Uhr. 
-    Alternativ gibt es die Möglichkeit einer Online-Terminbuchung über unsere Homepage.
+    Vereinbaren Sie Ihren Termin telefonisch unter  04762/41952 von Montag bis Donnerstag von 12:00 -14:00 Uhr. <br>
+    Alternativ können Sie Ihren Termin online über unsere Homepage buchen.
   placeholder_heading: Online-Terminkalender folgt in Kürze
