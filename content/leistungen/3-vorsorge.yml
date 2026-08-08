@@ -2,11 +2,11 @@ order: 3
 id: vorsorge
 open: false
 icon: check-circle
-title: "Vorsorge- & Gesundenuntersuchung"
-image: "images/leistungen/vorsorge.jpg"
-image_alt: "Untersuchungsraum mit Untersuchungsliege (Symbolbild)"
+title: Vorsorge- & Gesundenuntersuchung
+image: images/leistungen/vorsorge.jpg
+image_alt: Untersuchungsraum mit Untersuchungsliege (Symbolbild)
 begriffsliste:
-  - begriff: "Vorsorgeuntersuchung"
-    beschreibung: "Einmal jährlich können Sie ab dem 19. Lebensjahr mit Wohnsitz in Österreich die Vorsorgeuntersuchung kostenlos in Anspruch nehmen. Im Rahmen der Gesundenuntersuchung wird diese bei uns durchgeführt."
-  - begriff: "Gesundenuntersuchung"
-    beschreibung: "Herz-Kreislauf-Erkrankungen verursachen in unserer Gesellschaft die häufigsten Gesundheitsbeschwerden. Schlechte Ernährungsgewohnheiten und Bewegungsmangel tragen dazu bei, dass wir uns schnell müde und erschöpft fühlen. Eine Änderung des Lebensstils ist hier die wichtigste Maßnahme. Ist eine weitere Behandlung notwendig, entwickeln wir gemeinsam die besten Lösungen, um ein Fortschreiten der Erkrankung zu verhindern und Ihre Lebensqualität zu verbessern."
+  - begriff: Vorsorgeuntersuchung
+    beschreibung: Ab dem 19. Lebensjahr können Sie die kostenlose Vorsorgeuntersuchung einmal jährlich in Anspruch nehmen, sofern Sie Ihren Wohnsitz in Österreich haben. Gerne führen wir diese Untersuchung im Rahmen der Gesundenuntersuchung bei uns durch.
+  - begriff: Gesundenuntersuchung
+    beschreibung: Herz-Kreislauf-Erkrankungen verursachen in unserer Gesellschaft die häufigsten Gesundheitsbeschwerden. Schlechte Ernährungsgewohnheiten und Bewegungsmangel tragen dazu bei, dass wir uns schnell müde und erschöpft fühlen. Eine Änderung des Lebensstils ist hier die wichtigste Maßnahme. Ist eine weitere Behandlung notwendig, entwickeln wir gemeinsam die besten Lösungen, um ein Fortschreiten der Erkrankung zu verhindern und Ihre Lebensqualität zu verbessern.
