@@ -25,7 +25,7 @@ quick_facts:
     title: Barrierefrei
     text: Die Ordination ist barrierefrei zugänglich.
 leistungen_teaser:
-  heading: Ein breites Spektrum der Inneren Medizin
+  heading: Ein umfassendes Leistungsspektrum der Inneren Medizin
   lede: Von der Vorsorge bis zur individuellen Therapie – ich nehme mir Zeit für ein persönliches Gespräch und begleite Sie mit langjähriger Erfahrung auf dem gesamten Gebiet der Inneren Medizin.
   cards:
     - icon: clock
@@ -37,7 +37,7 @@ leistungen_teaser:
       text: Ultraschall, Ruhe- &amp; Belastungs-EKG, Langzeit-EKG, Spirometrie, Labor.
       link: leistungen.html#diagnostik
     - icon: heart
-      title: Erkrankungen der Inneren Medizin
+      title: Kompetente medizinische Betreuung in allen Bereichen der Inneren Medizin
       text: Herz-Kreislauf, Bluthochdruck, Diabetes, Magen-Darmerkrankungen, Stoffwechselstörungen etc.
       link: leistungen.html#internistische-leistungen
     - icon: droplet
