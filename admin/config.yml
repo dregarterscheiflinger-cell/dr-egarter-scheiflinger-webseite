@@ -282,7 +282,7 @@ singletons:
         widget: object
         fields:
           - { name: lede, label: "Text über dem Terminkalender", widget: text }
-          - { name: placeholder_heading, label: "Platzhalter-Überschrift" }
+          - { name: termion_src, label: "TermiOn-Einbettungslink (aus TermiOn kopieren, nicht selbst ändern)", widget: text }
 
   - divider: true
 

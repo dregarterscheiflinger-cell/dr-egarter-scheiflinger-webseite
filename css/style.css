@@ -863,27 +863,16 @@ h3 { font-size: 1.25rem; line-height: 1.3; font-weight: 700; }
 }
 .map-frame iframe { width: 100%; height: 340px; border: 0; display: block; }
 
-.booking-placeholder {
-  border: 2px dashed var(--gray-300);
+.termion-frame {
+  max-width: 480px;
+  margin-inline: auto;
   border-radius: var(--radius-lg);
-  padding: 30px 24px;
-  text-align: center;
-  background: var(--gray-100);
-}
-.booking-placeholder .icon { color: var(--bordeaux); margin-bottom: 12px; }
-.booking-placeholder h3 { margin-bottom: 8px; }
-.booking-placeholder p { color: var(--gray-700); font-size: 0.92rem; max-width: 480px; margin-inline: auto 12px auto; }
-.booking-placeholder code {
-  display: block;
-  margin-top: 14px;
+  overflow: hidden;
+  border: 1px solid var(--gray-200);
+  box-shadow: var(--shadow-sm);
   background: var(--white);
-  border: 1px solid var(--gray-300);
-  border-radius: var(--radius-sm);
-  padding: 10px 14px;
-  font-size: 0.78rem;
-  color: var(--gray-500);
-  text-align: left;
 }
+.termion-frame iframe { width: 100%; height: 680px; border: 0; display: block; }
 
 /* ==========================================================================
    Notice banner (legal update)

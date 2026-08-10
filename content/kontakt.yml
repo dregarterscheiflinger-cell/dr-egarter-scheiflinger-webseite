@@ -16,4 +16,4 @@ booking:
   lede: |-
     Vereinbaren Sie Ihren Termin telefonisch unter  04762/41952 von Montag bis Donnerstag von 12:00 -14:00 Uhr. <br>
     Alternativ können Sie Ihren Termin online über unsere Homepage buchen.
-  placeholder_heading: Online-Terminkalender folgt in Kürze
+  termion_src: "https://egarter-scheiflinger.termion.at/Api/Booking/27988?mitarbeitercode=279887e1b003b-f582-4db6-b522-fc7b70e1adb7&terminartId=0&color=4e599d&colorhover=6d1004&fontcolor=fff&titelfontcolor=fff&txtfontcolor=fff&fontcolorhover=fff&txtbordercolor=e5e5e5&txtbordercolorhover=e5e5e5&btnbordersize=0px&btnbordercolor=fff&btnbordercolorhover=6d1004&txtbordersize=0px&btncolor=4e599d&btncolorhover=6d1004&btnfontcolor=fff&btnfontcolorhover=fff&underlinecolor=831212&shadow=none&titlefontsize=16px&txtfontsize=13px&fontfamily=&titelfontfamily=&txtfontfamily=&btnbordercolor=e5e5e5&boxbordersize=2px"

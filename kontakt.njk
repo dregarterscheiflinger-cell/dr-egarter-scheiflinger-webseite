@@ -75,10 +75,8 @@ permalink: "kontakt.html"
         <h2>Termin buchen</h2>
         <p class="lede">{{ kontakt.booking.lede | safe }}</p>
       </div>
-      <div class="booking-placeholder">
-        {% icon "calendar", {size: 34, strokeWidth: 1.7} %}
-        <h3>{{ kontakt.booking.placeholder_heading }}</h3>
-        <code><!-- TODO: TermiOn Embed-/iFrame-Code hier einfügen --></code>
+      <div class="termion-frame">
+        <iframe src="{{ kontakt.booking.termion_src | safe }}" title="Online-Terminbuchung" loading="lazy"></iframe>
       </div>
     </div>
   </div>
