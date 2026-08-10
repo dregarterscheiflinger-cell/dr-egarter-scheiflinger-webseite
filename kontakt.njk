@@ -8,7 +8,7 @@ permalink: "kontakt.html"
   <div class="container page-header">
     <span class="eyebrow">Kontakt</span>
     <h1>{{ kontakt.page_header.heading }}</h1>
-    <p class="lede">{{ kontakt.page_header.lede }}</p>
+    <p class="lede">{{ kontakt.page_header.lede | safe }}</p>
   </div>
 
   <div class="container" style="margin-bottom:12px;">
@@ -73,7 +73,7 @@ permalink: "kontakt.html"
       <div class="section-head section-head--center">
         <span class="eyebrow">Terminvereinbarung</span>
         <h2>Termin buchen</h2>
-        <p class="lede">{{ kontakt.booking.lede }}</p>
+        <p class="lede">{{ kontakt.booking.lede | safe }}</p>
       </div>
       <div class="booking-placeholder">
         {% icon "calendar", {size: 34, strokeWidth: 1.7} %}

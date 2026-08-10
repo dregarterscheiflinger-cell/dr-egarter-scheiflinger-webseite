@@ -7,6 +7,7 @@ footerTagline: "Wahlarztordination für Innere Medizin, Nephrologie & Hypertensi
 permalink: "impressum.html"
 ---
   <div class="container page-header">
+    <img src="images/logo.png" alt="Dr. Egarter-Scheiflinger Logo" class="page-header-logo">
     <span class="eyebrow">Rechtliches</span>
     <h1>Impressum</h1>
   </div>
@@ -17,7 +18,7 @@ permalink: "impressum.html"
 
       <h3 style="margin-top:26px;">Medieninhaberin, Herausgeberin &amp; für den Inhalt verantwortlich</h3>
       <p>{{ impressum.medieninhaberin.name }}<br>
-      {{ impressum.medieninhaberin.taetigkeit }}<br>
+      {{ impressum.medieninhaberin.taetigkeit | safe }}<br>
       {{ impressum.medieninhaberin.strasse }}<br>
       {{ impressum.medieninhaberin.ort }}</p>
 
@@ -26,7 +27,7 @@ permalink: "impressum.html"
       E-Mail: <a href="mailto:{{ impressum.kontakt.email }}" style="text-decoration:underline;">{{ impressum.kontakt.email }}</a></p>
 
       <h3 style="margin-top:22px;">Berufsbezeichnung &amp; berufsrechtliche Angaben</h3>
-      <p>Berufsbezeichnung: {{ impressum.berufsrecht.berufsbezeichnung }}<br>
+      <p>Berufsbezeichnung: {{ impressum.berufsrecht.berufsbezeichnung | safe }}<br>
       Verliehen in: {{ impressum.berufsrecht.verliehen_in }}<br>
       Zuständige Kammer: {{ impressum.berufsrecht.kammer }}<br>
       Anzuwendende berufsrechtliche Vorschriften: {{ impressum.berufsrecht.vorschriften_text | safe }}</p>
@@ -36,18 +37,18 @@ permalink: "impressum.html"
       Räumlicher Geltungsbereich: {{ impressum.versicherung.geltungsbereich }}</p>
 
       <h3 style="margin-top:22px;">Umsatzsteuer</h3>
-      <p>{{ impressum.umsatzsteuer_text }}</p>
+      <p>{{ impressum.umsatzsteuer_text | safe }}</p>
 
       <h3 style="margin-top:22px;">Unternehmensgegenstand</h3>
-      <p>{{ impressum.unternehmensgegenstand_text }}</p>
+      <p>{{ impressum.unternehmensgegenstand_text | safe }}</p>
 
       <h3 style="margin-top:22px;">EU-Streitschlichtung</h3>
       <p style="font-size:0.92rem; color:var(--gray-700);">{{ impressum.eu_streitschlichtung_text | safe }}</p>
 
       <h3 style="margin-top:22px;">Haftung für Inhalte dieser Website</h3>
-      <p style="font-size:0.92rem; color:var(--gray-700);">{{ impressum.haftung_inhalte_text }}</p>
+      <p style="font-size:0.92rem; color:var(--gray-700);">{{ impressum.haftung_inhalte_text | safe }}</p>
 
       <h3 style="margin-top:22px;">Haftung für Links</h3>
-      <p style="font-size:0.92rem; color:var(--gray-700);">{{ impressum.haftung_links_text }}</p>
+      <p style="font-size:0.92rem; color:var(--gray-700);">{{ impressum.haftung_links_text | safe }}</p>
     </div>
   </div>

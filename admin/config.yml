@@ -109,7 +109,9 @@ singletons:
         fields:
           - *icon_field
           - { name: title, label: "Titel" }
-          - { name: text, label: "Text (HTML wie <br> oder <a> ist erlaubt)", widget: text }
+          - { name: text, label: "Text (HTML wie <br> oder <a> ist erlaubt; leer lassen, wenn stattdessen ein Button angezeigt werden soll)", widget: text, required: false }
+          - { name: button_text, label: "Button-Beschriftung (statt Text; z. B. „Termin buchen“)", required: false }
+          - { name: button_link, label: "Button-Ziel (z. B. kontakt.html#termin)", required: false }
       - name: leistungen_teaser
         label: "Leistungs-Vorschau"
         widget: object

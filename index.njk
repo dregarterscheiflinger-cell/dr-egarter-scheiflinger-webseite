@@ -49,12 +49,12 @@ extraHead: |
       <div class="intro-portrait">
         <img src="{{ site.portrait_image }}" alt="Portrait von Dr. Karin Egarter-Scheiflinger">
         <p>{{ site.name }}</p>
-        <span>Fachärztin für Innere Medizin, Nierengesundheit &amp; Bluthochdruck</span>
+        <span>Fachärztin für Innere Medizin,<br>Fachärztin für Nierenerkrankungen und Bluthochdruck</span>
       </div>
       <div class="intro-text">
         <h1>{{ home.intro.heading }}</h1>
-        <p class="lede">{{ home.intro.lede }}</p>
-        <p>{{ home.intro.text }}</p>
+        <p class="lede">{{ home.intro.lede | safe }}</p>
+        <p>{{ home.intro.text | safe }}</p>
         <div class="intro-cta">
           <a class="btn btn-primary" href="kontakt.html#termin">Termin vereinbaren</a>
           <a class="btn btn-outline" href="leistungen.html">Leistungen ansehen</a>
@@ -71,7 +71,11 @@ extraHead: |
         {% icon fact.icon, {size: 26, strokeWidth: 1.8} %}
         <div>
           <h3>{{ fact.title }}</h3>
+          {%- if fact.button_text %}
+          <a class="btn btn-primary btn-sm" href="{{ fact.button_link }}" style="margin-top:8px;">{{ fact.button_text }}</a>
+          {%- else %}
           <p>{{ fact.text | safe }}</p>
+          {%- endif %}
         </div>
       </div>
       {%- endfor %}
@@ -84,7 +88,7 @@ extraHead: |
       <div class="section-head">
         <span class="eyebrow">Leistungen</span>
         <h2>{{ home.leistungen_teaser.heading }}</h2>
-        <p class="lede">{{ home.leistungen_teaser.lede }}</p>
+        <p class="lede">{{ home.leistungen_teaser.lede | safe }}</p>
       </div>
       <div class="card-grid">
         {%- for card in home.leistungen_teaser.cards %}
@@ -106,7 +110,7 @@ extraHead: |
         <div>
           <span class="eyebrow">Erstbesuch</span>
           <h2>{{ home.erstbesuch.heading }}</h2>
-          <p class="lede" style="margin-top:12px;">{{ home.erstbesuch.text }}</p>
+          <p class="lede" style="margin-top:12px;">{{ home.erstbesuch.text | safe }}</p>
         </div>
         <img src="{{ home.erstbesuch.image }}" alt="{{ home.erstbesuch.image_alt }}" loading="lazy">
       </div>
@@ -120,7 +124,7 @@ extraHead: |
         <div>
           <span class="eyebrow">Erstordination</span>
           <h2>{{ home.mitbringen.heading }}</h2>
-          <p class="lede" style="margin-top:12px;">{{ home.mitbringen.text }}</p>
+          <p class="lede" style="margin-top:12px;">{{ home.mitbringen.text | safe }}</p>
         </div>
         <div class="info-box">
           <ul class="check-list">
@@ -139,7 +143,7 @@ extraHead: |
       <div class="section-head section-head--center">
         <span class="eyebrow">Wahlarztordination</span>
         <h2>{{ home.wahlarzt.heading }}</h2>
-        <p class="lede">{{ home.wahlarzt.text }}</p>
+        <p class="lede">{{ home.wahlarzt.text | safe }}</p>
       </div>
     </div>
   </div>

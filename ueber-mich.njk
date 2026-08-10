@@ -20,7 +20,7 @@ permalink: "ueber-mich.html"
           {%- endfor %}
         </ul>
         {%- for p in ueberMich.intro %}
-        <p>{{ p }}</p>
+        <p>{{ p | safe }}</p>
         {%- endfor %}
       </div>
     </div>
@@ -33,7 +33,7 @@ permalink: "ueber-mich.html"
         <div>
           <span class="eyebrow">Werdegang</span>
           <h2>{{ ueberMich.werdegang.heading }}</h2>
-          <p class="lede" style="margin:12px 0 24px;">{{ ueberMich.werdegang.lede }}</p>
+          <p class="lede" style="margin:12px 0 24px;">{{ ueberMich.werdegang.lede | safe }}</p>
           <img src="{{ ueberMich.werdegang.image }}" alt="{{ ueberMich.werdegang.image_alt }}" style="border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
         </div>
         <div>
@@ -95,7 +95,7 @@ permalink: "ueber-mich.html"
       <div class="info-box info-box--bordeaux" style="display:flex; flex-wrap:wrap; gap:20px; align-items:center; justify-content:space-between;">
         <div>
           <h2 style="margin-bottom:6px;">{{ ueberMich.final_cta.heading }}</h2>
-          <p style="color:var(--gray-700);">{{ ueberMich.final_cta.text }}</p>
+          <p style="color:var(--gray-700);">{{ ueberMich.final_cta.text | safe }}</p>
         </div>
         <a class="btn btn-primary" href="kontakt.html#termin">Termin buchen</a>
       </div>

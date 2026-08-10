@@ -8,7 +8,7 @@ permalink: "patienteninfo.html"
   <div class="container page-header">
     <span class="eyebrow">Patienteninfo</span>
     <h1>{{ patienteninfo.page_header.heading }}</h1>
-    <p class="lede">{{ patienteninfo.page_header.lede }}</p>
+    <p class="lede">{{ patienteninfo.page_header.lede | safe }}</p>
   </div>
 
   <!-- E-Card + Rezepte -->
@@ -17,10 +17,10 @@ permalink: "patienteninfo.html"
       <div class="split">
         <div class="info-box">
           <h3 style="margin-bottom:10px;">{{ patienteninfo.ecard.heading }}</h3>
-          <p style="color:var(--gray-700);">{{ patienteninfo.ecard.text }}</p>
+          <p style="color:var(--gray-700);">{{ patienteninfo.ecard.text | safe }}</p>
           <div class="notice" style="margin-top:16px;">
             {% icon "alert-circle", {size: 20, strokeWidth: 1.8} %}
-            <span>{{ patienteninfo.ecard.notice }}</span>
+            <span>{{ patienteninfo.ecard.notice | safe }}</span>
           </div>
         </div>
         <div class="info-box">
@@ -40,7 +40,7 @@ permalink: "patienteninfo.html"
           <h2>{{ patienteninfo.wahlarzt.heading }}</h2>
         </div>
         <div>
-          <p>{{ patienteninfo.wahlarzt.text }}</p>
+          <p>{{ patienteninfo.wahlarzt.text | safe }}</p>
         </div>
       </div>
     </div>
@@ -52,7 +52,7 @@ permalink: "patienteninfo.html"
       <div class="section-head">
         <span class="eyebrow">Formulare</span>
         <h2>{{ patienteninfo.downloads.heading }}</h2>
-        <p class="lede">{{ patienteninfo.downloads.lede }}</p>
+        <p class="lede">{{ patienteninfo.downloads.lede | safe }}</p>
       </div>
       <ul class="check-list">
         {%- for item in patienteninfo.downloads.items %}
