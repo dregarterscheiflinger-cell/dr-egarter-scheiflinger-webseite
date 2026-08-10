@@ -1,23 +1,19 @@
 page_header:
-  heading: "Gut zu wissen"
-  lede: "Alles Wichtige rund um E-Card, Rezepte, Abrechnung und Formulare für Ihren Besuch."
-
+  heading: Nützliche Informationen für Ihren Besuch bei uns.
+  lede: Ob Terminvereinbarung, Rezeptbestellung oder allgemeine Fragen – hier finden Sie alle wichtigen Informationen auf einen Blick.
 ecard:
-  heading: "E-Card"
-  text: "Die E-Card ist bei jedem Besuch in der Ordination verpflichtend mitzubringen und zu stecken."
-  notice: "Aufgrund neuer regulatorischer Anforderungen der Bundesregierung gilt dies ab 1. Jänner 2026."
-
+  heading: E-Card
+  text: Die E-Card ist bei jedem Besuch in der Ordination verpflichtend mitzubringen und zu stecken.
+  notice: Aufgrund neuer regulatorischer Anforderungen der Bundesregierung gilt Folgendes ab 1. Jänner 2026.
 rezepte:
-  heading: "Rezeptbestellung"
-  text: 'Rezepte können telefonisch oder bevorzugt per E-Mail an <a href="mailto:ordination@dr-egarter-scheiflinger.at" style="text-decoration:underline;">ordination@dr-egarter-scheiflinger.at</a> bestellt werden. Für eine Weiterverordnung ist es notwendig, 1× im Quartal persönlich zu den Ordinationszeiten in die Ordination zu kommen, um die E-Card zu stecken – das ist ohne Terminvereinbarung möglich. Es wird eine Pauschale von 5 € pro Rezept bzw. 10 € für ein bewilligungspflichtiges Rezept verrechnet.'
-
+  heading: Rezeptbestellung
+  text: Rezepte können telefonisch oder bevorzugt per E-Mail an <a href="mailto:ordination@dr-egarter-scheiflinger.at" style="text-decoration:underline;">ordination@dr-egarter-scheiflinger.at</a> bestellt werden. Für eine Weiterverordnung ist es notwendig, 1× im Quartal persönlich zu den Ordinationszeiten in die Ordination zu kommen, um die E-Card zu stecken – das ist ohne Terminvereinbarung möglich. Es wird eine Pauschale von 5 € pro Rezept bzw. 10 € für ein bewilligungspflichtiges Rezept verrechnet.
 wahlarzt:
-  heading: "Wahlärztin ohne Kassenvertrag"
-  text: "Ich bin als Wahlärztin ohne Kassenvertrag tätig. Das bedeutet, dass wir unsere ärztlichen Leistungen per Honorarnote direkt mit Ihnen verrechnen und für Sie die Einreichung bei Ihrer Krankenkasse übernehmen. Von dieser erhalten Sie dann einen Teil der Kosten rückerstattet. Sollten Sie privat zusatzversichert sein, können Sie sogar mit einer Rückerstattung in Höhe der Gesamtkosten rechnen."
-
+  heading: Wahlärztin ohne Kassenvertrag
+  text: Ich bin als Wahlärztin ohne Kassenvertrag tätig. Das bedeutet, dass wir unsere ärztlichen Leistungen per Honorarnote direkt mit Ihnen verrechnen und für Sie die Einreichung bei Ihrer Krankenkasse übernehmen. Von dieser erhalten Sie dann einen Teil der Kosten rückerstattet. Sollten Sie privat zusatzversichert sein, können Sie sogar mit einer Rückerstattung in Höhe der Gesamtkosten rechnen.
 downloads:
-  heading: "Downloads"
-  lede: "Formulare zum Herunterladen und Vorbereiten für Ihren Besuch."
+  heading: Downloads
+  lede: Formulare zum Herunterladen und Vorbereiten für Ihren Besuch.
   items:
-    - label: "Patientendatenblatt"
-      file: "images/downloads/patientendatenblatt.pdf"
+    - label: Patientendatenblatt
+      file: images/downloads/patientendatenblatt.pdf

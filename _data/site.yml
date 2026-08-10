@@ -1,31 +1,31 @@
-name: "Dr. Karin Egarter-Scheiflinger"
-tagline: "Wahlarztordination für Innere Medizin, Nierengesundheit & Bluthochdruck"
+name: Dr. Karin Egarter-Scheiflinger
+tagline: Wahlarztordination für Innere Medizin
 address:
-  street: "Tirolerstraße 18/1"
-  zip: "9800"
-  city: "Spittal/Drau"
-  country: "Österreich"
-portrait_image: "images/portrait.jpg"
-phone: "04762/41952"
-phone_tel: "+43476241952"
-email: "ordination@dr-egarter-scheiflinger.at"
+  street: Tirolerstraße 18/1
+  zip: '9800'
+  city: Spittal/Drau
+  country: Österreich
+portrait_image: images/portrait.jpg
+phone: 04762/41952
+phone_tel: '+43476241952'
+email: ordination@dr-egarter-scheiflinger.at
 hours:
-  - day: "Montag"
-    time: "7:30–14 Uhr"
-  - day: "Dienstag"
-    time: "7:30–13:30 & 14–18 Uhr"
-  - day: "Mittwoch"
-    time: "7:30–14 Uhr"
-  - day: "Donnerstag"
-    time: "7:30–14 Uhr"
+  - day: Montag
+    time: 8-18 Uhr
+  - day: Dienstag
+    time: 8-14 Uhr
+  - day: Mittwoch
+    time: 8-14 Uhr
+  - day: Donnerstag
+    time: 8-14 Uhr
 nav:
-  - label: "Startseite"
-    url: "index.html"
-  - label: "Leistungen"
-    url: "leistungen.html"
-  - label: "Über mich"
-    url: "ueber-mich.html"
-  - label: "Patienteninfo"
-    url: "patienteninfo.html"
-  - label: "Kontakt"
-    url: "kontakt.html"
+  - label: Startseite
+    url: index.html
+  - label: Leistungen
+    url: leistungen.html
+  - label: Über mich
+    url: ueber-mich.html
+  - label: Patienteninfo
+    url: patienteninfo.html
+  - label: Kontakt
+    url: kontakt.html

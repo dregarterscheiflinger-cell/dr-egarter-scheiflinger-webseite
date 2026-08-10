@@ -2,23 +2,25 @@ order: 7
 id: nierengesundheit
 open: false
 icon: droplet
-title: "Nierengesundheit"
-image: "images/leistungen/nierengesundheit.jpg"
-image_alt: "Ultraschalluntersuchung des Bauchraums (Symbolbild)"
+title: Nierengesundheit
+image: images/leistungen/nierengesundheit.jpg
+image_alt: Ultraschalluntersuchung des Bauchraums (Symbolbild)
 intro:
-  - 'Unsere Nieren sind ein wahres Wunderwerk. Jeden Tag filtrieren sie über 1500 Liter Blut. Darüber hinaus sind sie für zahlreiche andere, wichtige Funktionen in unserem Körper verantwortlich.<br>Viele Erkrankungen können den Nieren schaden – allen voran Bluthochdruck und Diabetes, aber auch autoimmunologische Erkrankungen (Glomerulonephritiden) oder angeborene Erkrankungen wie familiäre Zystennieren.'
-  - "Ich bin spezialisiert auf die Diagnose und Behandlung von Nierenerkrankungen und lege ein besonderes Augenmerk auf Herz- und Gefäßerkrankungen, die bei Patientinnen und Patienten mit Nierenschwäche gehäuft vorkommen."
+  - |-
+    Unsere Nieren sind ein wahres Wunderwerk. Jeden Tag filtrieren sie über 1500 Liter Blut. Darüber hinaus sind sie für zahlreiche andere, wichtige Funktionen in unserem Körper verantwortlich.<br>
+    Es gibt jedoch viele Erkrankungen, die unseren Nieren schaden können. Dazu zählen vor allem der Bluthochdruck (Hypertonie), und die Zuckerkrankheit (Diabetes Mellitus). Zudem gibt es eine Vielzahl an autoimmunologischen Erkrankungen (sogenannten Glomerulonephritiden), die zu einer dauerhaften Nierenschädigung führen können, aber auch angeborene Erkrankungen (wie z.B. familiäre Zystennieren).
+  - Mein Spezialgebiet sind die Diagnose und Behandlung von Nierenerkrankungen sowie der Bluthochdruck. Daher lege ich ein besonderes Augenmerk auf die Diagnose und Therapie von Herz- und Gefäßerkrankungen, die bei Patientinnen und Patienten mit Nierenschwäche leider gehäuft vorkommen.
 gruppen:
   - unterpunkte:
-      - titel: "Nierensonographie"
-        text: "Mit dem Ultraschall kann ich Ihre Nieren schmerzfrei, von außen untersuchen. Dabei kann ich einerseits die Form und Größe der Nieren beurteilen und andererseits bestimmte Veränderungen an den Nieren erkennen (wie z. B. Zysten oder Tumore). Außerdem kann ich mir die Durchblutung der Nieren, die Nierengefäße und auch die ableitenden Harnwege inklusive der Harnblase ansehen. Durch diese Untersuchung gewinne ich wertvolle Hinweise auf etwaige Erkrankungen der Nieren."
-      - titel: "Laboruntersuchung"
-        text: "Wir können uns bestimmte Werte im Blut ansehen, die einerseits auf die Nierenfunktion selbst rückschließen lassen (z. B. Kreatinin) und andererseits auf Folgeerkrankungen einer Nierenschwäche hinweisen (wie z. B. eine Blutarmut im Rahmen einer Nierenschwäche oder Probleme mit dem Calcium- und Phosphatstoffwechsel)."
-      - titel: "Harnuntersuchung"
-        text: "Ihren Harn nehmen wir genauer unter die Lupe. Anhand von bestimmten Parametern im Harn können wir auf bestimmte Erkrankungen der Niere rückschließen. Ein besonderes Augenmerk legen wir dabei auf Eiweiß oder rote Blutkörperchen im Harn. Die Harnuntersuchung hilft uns aber auch, zwischen den meisten gutartigen Infektionen der Niere und schweren Erkrankungen der Niere zu unterscheiden."
-      - titel: "Vorbereitung zur Nierentransplantation"
-        text: "Als Patientin oder Patient, die/der an Nierenschwäche leidet, wird dieses Thema vielleicht früher oder später für Sie relevant. Vor einer geplanten Nierentransplantation ist eine Vielzahl an Untersuchungen notwendig, um Sie und etwaige Spender auf eine Eignung zu testen. Einen Teil der geplanten Untersuchungen können wir in unserer Ordination durchführen. Für den Rest bin ich Ihnen behilflich und kann Ihnen die entsprechenden Überweisungen geben. Außerdem kann ich Sie sehr ausführlich über das Thema Nierentransplantation aufklären und so eventuelle Unsicherheiten aus dem Weg räumen."
-      - titel: "Begleitung bei geplanter Nierentransplantation"
-        text: "Auch wenn Sie schon für eine Nierentransplantation gelistet wurden, sind regelmäßige Kontrolluntersuchungen notwendig, um Ihr Transplantationszentrum auf dem Laufenden zu halten. Nur dadurch kann gewährleistet werden, dass Sie weiterhin für die Nierentransplantation gelistet bleiben. Gerne bieten wir Ihnen auch hier alle notwendigen Untersuchungen an und begleiten Sie dabei."
-      - titel: "Nachsorge nach erfolgter Nierentransplantation"
-        text: 'Nach einer Nierentransplantation werden Patientinnen und Patienten meist an eine Nierenambulanz angebunden. Nichtsdestotrotz sind regelmäßige internistische Kontrollen notwendig, damit Ihr „neues" Organ weiterhin gut funktioniert und wir mögliche Folgeerkrankungen rasch erkennen und dementsprechend behandeln können. Durch meine jahrelange Erfahrung auf diesem Gebiet und meine Kontakte zu den einzelnen Transplantationszentren weiß ich genau, worauf wir achten müssen.'
+      - titel: Nierensonographie
+        text: Die schmerzfreie Ultraschalluntersuchung ermöglicht eine genaue Beurteilung von Nieren un d Harnwegen. Neben Größe und Form der Nieren können auch mögliche Veränderungen , beispielsweise Zysten, Tumore oder andere Auffälligkeiten erkannt werden. Zusätzliche können die Durchblutung der Nieren, die Nierengefäße und die Harnblase beurteilt werden. Die Untersuchung liefert damit wichtige Hinweise auf mögliche Erkrankungen der Nieren und Harnwege.
+      - titel: Laboruntersuchung
+        text: Wir können uns bestimmte Werte im Blut ansehen, die einerseits auf die Nierenfunktion selbst rückschließen lassen (z. B. Kreatinin) und andererseits auf Folgeerkrankungen einer Nierenschwäche hinweisen (wie z. B. eine Blutarmut im Rahmen einer Nierenschwäche oder Probleme mit dem Calcium- und Phosphatstoffwechsel).
+      - titel: Harnuntersuchung
+        text: Ihren Harn nehmen wir genauer unter die Lupe. Anhand von bestimmten Parametern im Harn können wir auf bestimmte Erkrankungen der Niere rückschließen. Ein besonderes Augenmerk wird  dabei auf Eiweiß oder rote Blutkörperchen im Harn gelegt. Die Harnuntersuchung hilft uns aber auch, zwischen den meisten gutartigen Infektionen der Niere und schweren Erkrankungen zu unterscheiden.
+      - titel: Vorbereitung zur Nierentransplantation
+        text: Als Patientin oder Patient, die/der an Nierenschwäche leidet, wird dieses Thema vielleicht früher oder später für Sie relevant. Vor einer geplanten Nierentransplantation ist eine Vielzahl an Untersuchungen notwendig, um Sie und etwaige Spender auf eine Eignung zu testen. Einen Teil der geplanten Untersuchungen können wir in unserer Ordination durchführen. Für die weitere notwendige Diagnostik kann ich Ihnen bei der Organisation behilflich sein und  Ihnen auch die entsprechenden Überweisungen geben. Außerdem kann ich Sie sehr ausführlich über das Thema Nierentransplantation aufklären und so eventuelle Unsicherheiten aus dem Weg räumen.
+      - titel: Begleitung bei geplanter Nierentransplantation
+        text: Auch wenn Sie schon für eine Nierentransplantation gelistet wurden, sind regelmäßige Kontrolluntersuchungen notwendig, um Ihr Transplantationszentrum auf dem Laufenden zu halten. Nur dadurch kann gewährleistet werden, dass Sie weiterhin für die Nierentransplantation gelistet bleiben. Gerne bieten wir Ihnen auch hier alle notwendigen Untersuchungen an und begleiten Sie dabei.
+      - titel: Nachsorge nach erfolgter Nierentransplantation
+        text: Nach einer Nierentransplantation werden Patientinnen und Patienten an eine Nierenambulanz angebunden. Nichtsdestotrotz sind regelmäßige internistische Kontrollen notwendig, damit Ihr „neues" Organ weiterhin gut funktioniert und wir mögliche Folgeerkrankungen rasch erkennen und dementsprechend behandeln können. Durch meine jahrelange Erfahrung auf diesem Gebiet und meine Kontakte zu den einzelnen Transplantationszentren weiß ich genau, worauf wir achten müssen.

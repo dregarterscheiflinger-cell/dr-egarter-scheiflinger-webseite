@@ -10,14 +10,14 @@ hero_slides:
 intro:
   heading: Ihre Gesundheit liegt mir am Herzen
   lede: In meiner internistischen Wahlarztordination biete ich Ihnen eine umfassende medizinische Betreuung – von der Vorsorge über die Diagnostik bis hin zur individuellen Therapie.
-  text: Als Wahlärztin kann ich mir für Ihr Anliegen ausreichend Zeit nehmen. Ich lege großen Wert auf persönliche Beratung, moderne Untersuchungsmethoden und eine ganzheitliche Betrachtung Ihrer Gesundheit – für mehr Lebensqualität und Sicherheit. Mein Ziel ist es, Sie individuell, kompetent und einfühlsam zu begleiten. Gemeinsam mit Ihnen erstelle ich einen maßgeschneiderten Behandlungsplan.
+  text: Als Wahlärztin kann ich mir für Ihr Anliegen ausreichend Zeit nehmen. Ich lege großen Wert auf ein persönliches Gespräch, moderne Untersuchungsmethoden und eine ganzheitliche Betrachtung Ihrer Gesundheit – für mehr Lebensqualität und Sicherheit. Mein Ziel ist es, Sie individuell, kompetent und einfühlsam zu begleiten. Gemeinsam mit Ihnen erstelle ich einen maßgeschneiderten Behandlungsplan.
 quick_facts:
   - icon: map-pin
     title: Ordination
     text: Tirolerstraße 18/1<br>9800 Spittal/Drau
   - icon: clock
     title: Ordinationszeiten
-    text: Mo, Mi, Do 7:30–14 Uhr<br>Di 7:30–13:30 &amp; 14–18 Uhr
+    text: Mo von 8 bis 18 Uhr<br> Di, Mi, Do von 8-bis 14 Uhr
   - icon: phone
     title: Terminvereinbarung
     button_text: Termin buchen
@@ -26,27 +26,27 @@ quick_facts:
     title: Barrierefrei
     text: Die Ordination ist barrierefrei zugänglich.
 leistungen_teaser:
-  heading: Ein breites Spektrum der Inneren Medizin
-  lede: Von der Vorsorge bis zur individuellen Therapie – ich nehme mir Zeit für ein persönliches Gespräch und begleite Sie mit langjähriger Erfahrung aus der Inneren Medizin.
+  heading: Ein umfassendes Leistungsspektrum der Inneren Medizin
+  lede: Von der Vorsorge bis zur individuellen Therapie – ich nehme mir Zeit für ein persönliches Gespräch und begleite Sie mit langjähriger Erfahrung auf dem gesamten Gebiet der Inneren Medizin.
   cards:
-    - icon: heart
-      title: Herz &amp; Kreislauf
-      text: Herzschwäche, Rhythmusstörungen, Herzklappenerkrankungen, KHK und Bluthochdruck.
-      link: leistungen.html#internistische-leistungen
-    - icon: droplet
-      title: Nierengesundheit
-      text: 'Mein Spezialgebiet: Diagnose und Behandlung von Nierenerkrankungen und Bluthochdruck.'
-      link: leistungen.html#nierengesundheit
-    - icon: check-circle
+    - icon: clock
       title: Vorsorge
       text: Jährliche Vorsorge- und Gesundenuntersuchung, Manager-Check, OP-Freigabe.
       link: leistungen.html#vorsorge
     - icon: activity
       title: Diagnostik
-      text: Ultraschall, Echokardiographie, Ruhe- &amp; Belastungs-EKG, Langzeit-EKG, Spirometrie, Labor.
+      text: Ultraschall, Ruhe- &amp; Belastungs-EKG, Langzeit-EKG, Spirometrie, Labor.
       link: leistungen.html#diagnostik
+    - icon: heart
+      title: Kompetente medizinische Betreuung in allen Bereichen der Inneren Medizin
+      text: Herz-Kreislauf, Bluthochdruck, Diabetes, Magen-Darmerkrankungen, Stoffwechselstörungen etc.
+      link: leistungen.html#internistische-leistungen
+    - icon: droplet
+      title: Nierengesundheit
+      text: Diagnose und Behandlung von Nierenerkrankungen und Bluthochdruck.
+      link: leistungen.html#nierengesundheit
 erstbesuch:
-  heading: So läuft Ihr erster Besuch ab
+  heading: Ablauf Ihres ersten Besuches
   text: Nach der Terminvereinbarung nehme ich mir bei Ihrem ersten Besuch ausführlich Zeit für ein persönliches Anamnesegespräch und eine gründliche körperliche Untersuchung. Gemeinsam besprechen wir Ihre Beschwerden, bereits vorliegende Befunde und die nächsten Schritte – von weiterführender Diagnostik bis zur individuellen Therapieplanung. So erhalten Sie von Anfang an eine klare Einschätzung Ihrer gesundheitlichen Situation.
   image: images/erstbesuch.jpg
   image_alt: Persönliches Gespräch zwischen Ärztin und Patientin (Symbolbild)
@@ -62,5 +62,5 @@ mitbringen:
 wahlarzt:
   heading: Wie die Abrechnung als Wahlärztin funktioniert
   text: Ich bin als Wahlärztin ohne Kassenvertrag tätig – das bedeutet mehr Zeit und individuelle Betreuung für Sie. Meine ärztlichen Leistungen verrechne ich direkt mit Ihnen per Honorarnote; die Einreichung bei Ihrer gesetzlichen Krankenkasse übernehme ich für Sie. Von dieser erhalten Sie anschließend einen Teil der Kosten zurückerstattet – mit privater Zusatzversicherung ist häufig sogar die volle Rückerstattung möglich.
-quote: „Genießen Sie Ihr Leben, wir kümmern uns um Ihre Beschwerden.“
+quote: „Ihre Lebensqualität im Mittelpunkt, Ihre Gesundheit in besten Händen.“
 final_cta_heading: Wir freuen uns auf Sie!
