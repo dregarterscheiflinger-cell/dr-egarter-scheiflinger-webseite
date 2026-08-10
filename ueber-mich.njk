@@ -64,7 +64,8 @@ permalink: "ueber-mich.html"
     <div class="container">
       <span class="eyebrow">Qualifikationen</span>
       <h2>Diplome</h2>
-      <div class="credential-badges" style="margin-top:22px;">
+      <img src="{{ ueberMich.diplome_bild.image }}" alt="{{ ueberMich.diplome_bild.alt }}" loading="lazy" class="credential-banner">
+      <div class="credential-badges">
         {%- for d in ueberMich.diplome %}
         <div class="credential-badge">
           <div class="icon-circle">{% icon d.icon, {size: 21, class: ""} %}</div>

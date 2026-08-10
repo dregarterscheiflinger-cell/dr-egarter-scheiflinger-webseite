@@ -184,6 +184,12 @@ singletons:
           - { name: titel, label: "Titel" }
           - { name: text, label: "Beschreibung" }
       - { name: quote, label: "Zitat" }
+      - name: diplome_bild
+        label: "Bild über den Diplomen"
+        widget: object
+        fields:
+          - { name: image, label: "Bild", widget: image }
+          - { name: alt, label: "Bildbeschreibung" }
       - name: diplome
         label: "Diplome"
         widget: list
