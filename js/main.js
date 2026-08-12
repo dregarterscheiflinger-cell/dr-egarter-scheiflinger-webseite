@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var timer;
     var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-    if (dotsWrap) {
+    if (dotsWrap && slides.length > 1) {
       slides.forEach(function (_, i) {
         var dot = document.createElement('button');
         dot.type = 'button';

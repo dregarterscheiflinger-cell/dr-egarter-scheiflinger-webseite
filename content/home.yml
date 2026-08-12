@@ -1,12 +1,6 @@
 hero_slides:
-  - image: images/slideshow-1.jpg
-    alt: Freundlicher Empfangsbereich in einer Arztordination
-  - image: images/slideshow-2.jpg
-    alt: Persönliches Gespräch zwischen Ärztin und Patientin
-  - image: images/slideshow-3.jpg
-    alt: Freundliches Praxisteam
-  - image: images/slideshow-4.jpg
-    alt: Ruhiger Wartebereich der Ordination
+  - image: images/hero-standbild.jpg
+    alt: Freundlicher Wartebereich einer modernen Arztordination
 intro:
   heading: Ihre Gesundheit liegt mir am Herzen
   lede: In meiner internistischen Wahlarztordination biete ich Ihnen eine umfassende medizinische Betreuung – von der Vorsorge über die Diagnostik bis hin zur individuellen Therapie.
