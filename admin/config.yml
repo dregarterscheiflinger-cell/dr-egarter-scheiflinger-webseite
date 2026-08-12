@@ -159,6 +159,12 @@ singletons:
     file: "content/ueber-mich.yml"
     icon: person
     fields:
+      - name: portraet_bild
+        label: "Portraitfoto (oben, kein rundes Icon)"
+        widget: object
+        fields:
+          - { name: image, label: "Bild", widget: image }
+          - { name: alt, label: "Bildbeschreibung" }
       - name: badges
         label: "Kurz-Qualifikationen (Badges oben)"
         widget: list
