@@ -43,8 +43,8 @@ timeline:
     text: A.ö. Krankenhaus Spittal/Drau — Beginn der Wahlarztordination
 quote: „Ihre Lebensqualität im Mittelpunkt, Ihre Gesundheit in besten Händen.“
 diplome_bild:
-  image: images/slideshow-3.jpg
-  alt: Freundliches Praxisteam
+  image: images/diplome.jpg
+  alt: Dr. Karin Egarter-Scheiflinger mit Fachliteratur in ihrer Ordination
 diplome:
   - icon: heart
     text: Fachärztin für Innere Medizin

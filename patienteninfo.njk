@@ -14,14 +14,14 @@ permalink: "patienteninfo.html"
   <!-- E-Card + Rezepte -->
   <div class="section section--tight">
     <div class="container">
+      <div class="patienteninfo-hinweis">
+        {% icon "alert-circle", {size: 24, strokeWidth: 1.8} %}
+        <span>{{ patienteninfo.hinweis | safe }}</span>
+      </div>
       <div class="split">
         <div class="info-box">
           <h3 style="margin-bottom:10px;">{{ patienteninfo.ecard.heading }}</h3>
           <p style="color:var(--gray-700);">{{ patienteninfo.ecard.text | safe }}</p>
-          <div class="notice" style="margin-top:16px;">
-            {% icon "alert-circle", {size: 20, strokeWidth: 1.8} %}
-            <span>{{ patienteninfo.ecard.notice | safe }}</span>
-          </div>
         </div>
         <div class="info-box">
           <h3 style="margin-bottom:10px;">{{ patienteninfo.rezepte.heading }}</h3>

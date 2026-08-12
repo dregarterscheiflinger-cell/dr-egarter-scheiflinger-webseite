@@ -222,13 +222,13 @@ singletons:
         fields:
           - { name: heading, label: "Überschrift" }
           - { name: lede, label: "Anmoderation", widget: text }
+      - { name: hinweis, label: "Wichtiger Hinweis (gilt für E-Card & Rezeptbestellung, wird auffällig oben angezeigt)", widget: text }
       - name: ecard
         label: "E-Card"
         widget: object
         fields:
           - { name: heading, label: "Überschrift" }
           - { name: text, label: "Text", widget: text }
-          - { name: notice, label: "Hinweisbox", widget: text }
       - name: rezepte
         label: "Rezeptbestellung"
         widget: object
