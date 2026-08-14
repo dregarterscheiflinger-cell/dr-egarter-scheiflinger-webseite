@@ -141,17 +141,54 @@ h3 { font-size: 1.25rem; line-height: 1.3; font-weight: 700; }
 /* ==========================================================================
    Header / Navigation
    ========================================================================== */
-.announcement-bar {
-  background: var(--bordeaux);
-  color: var(--white);
+.announcement-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 900;
+  background: rgba(27, 36, 48, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease;
+}
+.announcement-modal-backdrop.is-visible {
+  opacity: 1;
+  visibility: visible;
+}
+.announcement-modal {
+  position: relative;
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  max-width: 420px;
+  width: 100%;
+  padding: 32px 28px 28px;
   text-align: center;
+}
+.announcement-modal .icon { color: var(--bordeaux); margin-bottom: 12px; }
+.announcement-modal p {
+  margin: 0;
+  font-size: 1rem;
   font-weight: 600;
-  font-size: 0.88rem;
-  padding: 10px 16px;
+  color: var(--gray-900);
+  line-height: 1.5;
 }
-@media (min-width: 700px) {
-  .announcement-bar { font-size: 0.92rem; padding: 11px 16px; }
+.announcement-modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  padding: 6px;
+  background: none;
+  border: none;
+  border-radius: 50%;
+  color: var(--gray-500);
+  cursor: pointer;
 }
+.announcement-modal-close:hover { background: var(--gray-100); color: var(--gray-900); }
 .site-header {
   position: sticky;
   top: 0;

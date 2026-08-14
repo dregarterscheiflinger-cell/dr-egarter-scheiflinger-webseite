@@ -27,6 +27,32 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+  /* --- Announcement popup --- */
+  var announcementModal = document.getElementById('announcement-modal');
+  if (announcementModal) {
+    var announcementText = announcementModal.getAttribute('data-announcement-text');
+    var dismissedText = localStorage.getItem('dismissedAnnouncement');
+    var closeAnnouncement = function () {
+      announcementModal.classList.remove('is-visible');
+      localStorage.setItem('dismissedAnnouncement', announcementText);
+    };
+    if (announcementText && announcementText !== dismissedText) {
+      announcementModal.classList.add('is-visible');
+    }
+    var announcementClose = announcementModal.querySelector('.announcement-modal-close');
+    if (announcementClose) {
+      announcementClose.addEventListener('click', closeAnnouncement);
+    }
+    announcementModal.addEventListener('click', function (e) {
+      if (e.target === announcementModal) closeAnnouncement();
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && announcementModal.classList.contains('is-visible')) {
+        closeAnnouncement();
+      }
+    });
+  }
+
   /* --- Hero slideshow --- */
   var slideshow = document.querySelector('.hero-slideshow');
   if (slideshow) {

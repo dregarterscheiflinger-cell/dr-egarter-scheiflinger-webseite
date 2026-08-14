@@ -53,11 +53,11 @@ singletons:
     icon: settings
     fields:
       - name: ankuendigung
-        label: "Ankündigungsbalken (oben auf jeder Seite)"
+        label: "Ankündigungs-Popup (erscheint beim Seitenaufruf, mit X schließbar)"
         widget: object
         fields:
-          - { name: aktiv, label: "Anzeigen?", widget: boolean, default: false }
-          - { name: text, label: "Text" }
+          - { name: aktiv, label: "Popup anzeigen?", widget: boolean, default: false }
+          - { name: text, label: "Kurzer Text (z. B. Urlaub, Öffnungsdatum, wichtige Info)", widget: text }
       - { name: name, label: "Name der Praxis" }
       - { name: tagline, label: "Tagline / Fachrichtung" }
       - name: address
