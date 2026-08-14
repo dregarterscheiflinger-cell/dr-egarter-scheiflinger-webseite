@@ -1063,6 +1063,33 @@ h3 { font-size: 1.25rem; line-height: 1.3; font-weight: 700; }
   }
 }
 
+.back-to-top {
+  position: fixed;
+  left: 16px;
+  bottom: 16px;
+  z-index: 800;
+  width: 46px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bordeaux);
+  color: var(--white);
+  border: none;
+  border-radius: 50%;
+  box-shadow: var(--shadow-md);
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px);
+  transition: opacity 0.2s ease, transform 0.2s ease, background 0.2s ease;
+}
+.back-to-top:hover { background: var(--bordeaux-dark); }
+.back-to-top.is-visible { opacity: 1; visibility: visible; transform: translateY(0); }
+@media (min-width: 700px) {
+  .back-to-top { left: 24px; bottom: 24px; }
+}
+
 /* Utility */
 .visually-hidden {
   position: absolute;

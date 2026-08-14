@@ -1,6 +1,19 @@
 // Dr. Egarter-Scheiflinger — main.js
 document.addEventListener('DOMContentLoaded', function () {
 
+  /* --- Back to top button --- */
+  var backToTop = document.getElementById('back-to-top');
+  if (backToTop) {
+    var toggleBackToTop = function () {
+      backToTop.classList.toggle('is-visible', window.scrollY > 600);
+    };
+    toggleBackToTop();
+    window.addEventListener('scroll', toggleBackToTop, { passive: true });
+    backToTop.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
   /* --- Mobile navigation toggle --- */
   var toggle = document.querySelector('.nav-toggle');
   var panel = document.querySelector('.nav-panel');

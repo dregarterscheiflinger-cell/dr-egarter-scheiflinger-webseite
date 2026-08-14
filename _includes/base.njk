@@ -10,6 +10,16 @@
 {%- if robots %}
 <meta name="robots" content="{{ robots }}">
 {%- endif %}
+<meta property="og:type" content="website">
+<meta property="og:locale" content="de_AT">
+<meta property="og:site_name" content="{{ site.name }}">
+<meta property="og:title" content="{{ title }}">
+{%- if description %}
+<meta property="og:description" content="{{ description }}">
+{%- endif %}
+<meta property="og:image" content="https://www.dr-egarter-scheiflinger.at/images/hero-standbild.webp">
+<meta property="og:url" content="https://www.dr-egarter-scheiflinger.at/{{ permalink }}">
+<meta name="twitter:card" content="summary_large_image">
 {%- if extraHead %}
 {{ extraHead | safe }}
 {%- endif %}
@@ -40,6 +50,10 @@
 </main>
 
 {% include "partials/footer.njk" %}
+
+<button type="button" class="back-to-top" id="back-to-top" aria-label="Nach oben scrollen">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+</button>
 
 {% include "partials/cookie-banner.njk" %}
 

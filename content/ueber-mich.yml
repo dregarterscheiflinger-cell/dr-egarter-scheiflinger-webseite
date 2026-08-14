@@ -1,5 +1,5 @@
 portraet_bild:
-  image: images/ueber-mich-bild.jpg
+  image: images/ueber-mich-bild.webp
   alt: Portrait von Dr. Karin Egarter-Scheiflinger
 badges:
   - Fachärztin für Innere Medizin
@@ -11,7 +11,7 @@ intro:
 werdegang:
   heading: Mein Weg in die Innere Medizin
   lede: Durch meine langjährige Tätigkeit als Internistin im Krankenhaus – zuletzt als Primarärztin und Oberärztin mit Leitung der Dialyse- und Nierenambulanz – bringe ich umfassende praktische Erfahrung auf dem gesamten Gebiet der Inneren Medizin in meine Wahlarztordination ein.
-  image: images/breit.jpg
+  image: images/breit.webp
   image_alt: Dr. Karin Egarter-Scheiflinger
 timeline:
   - jahr: 1994–1999
@@ -46,7 +46,7 @@ timeline:
     text: A.ö. Krankenhaus Spittal/Drau — Beginn der Wahlarztordination
 quote: „Ihre Lebensqualität im Mittelpunkt, Ihre Gesundheit in besten Händen.“
 diplome_bild:
-  image: images/diplome.jpg
+  image: images/diplome.webp
   alt: Dr. Karin Egarter-Scheiflinger mit Fachliteratur in ihrer Ordination
 diplome:
   - icon: heart

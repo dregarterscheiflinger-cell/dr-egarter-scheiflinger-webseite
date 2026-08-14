@@ -1,5 +1,5 @@
 hero_slides:
-  - image: images/hero-standbild.jpg
+  - image: images/hero-standbild.webp
     alt: Freundlicher Wartebereich einer modernen Arztordination
 intro:
   heading: Ihre Gesundheit liegt mir am Herzen
@@ -42,7 +42,7 @@ leistungen_teaser:
 erstbesuch:
   heading: Ablauf Ihres ersten Besuches
   text: Nach der Terminvereinbarung nehme ich mir bei Ihrem ersten Besuch ausführlich Zeit für ein persönliches Anamnesegespräch und eine gründliche körperliche Untersuchung. Gemeinsam besprechen wir Ihre Beschwerden, bereits vorliegende Befunde und die nächsten Schritte – von weiterführender Diagnostik bis zur individuellen Therapieplanung. So erhalten Sie von Anfang an eine klare Einschätzung Ihrer gesundheitlichen Situation.
-  image: images/erstbesuch.jpg
+  image: images/erstbesuch.webp
   image_alt: Dr. Karin Egarter-Scheiflinger im persönlichen Gespräch mit einem Patienten
 mitbringen:
   heading: Was Sie zur Erstordination mitbringen sollten
