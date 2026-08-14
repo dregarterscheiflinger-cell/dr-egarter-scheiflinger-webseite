@@ -52,6 +52,12 @@ singletons:
     file: "_data/site.yml"
     icon: settings
     fields:
+      - name: ankuendigung
+        label: "Ankündigungsbalken (oben auf jeder Seite)"
+        widget: object
+        fields:
+          - { name: aktiv, label: "Anzeigen?", widget: boolean, default: false }
+          - { name: text, label: "Text" }
       - { name: name, label: "Name der Praxis" }
       - { name: tagline, label: "Tagline / Fachrichtung" }
       - name: address

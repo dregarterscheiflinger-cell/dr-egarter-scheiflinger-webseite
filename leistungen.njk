@@ -24,7 +24,9 @@ permalink: "leistungen.html"
             <svg class="chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
           </summary>
           <div class="accordion-body">
+            {%- if item.image %}
             <img class="accordion-image" src="{{ item.image }}" alt="{{ item.image_alt }}" loading="lazy">
+            {%- endif %}
             {%- for p in item.intro %}
             <p>{{ p | safe }}</p>
             {%- endfor %}
