@@ -21,6 +21,8 @@ hours:
     time: 8-14 Uhr
   - day: Donnerstag
     time: 8-14 Uhr
+  - day: Freitag
+    time: nach Vereinbarung
 nav:
   - label: Startseite
     url: index.html
