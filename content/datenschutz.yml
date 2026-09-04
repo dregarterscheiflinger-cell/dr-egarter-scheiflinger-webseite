@@ -29,3 +29,6 @@ abschnitte:
   - nummer: "10."
     titel: "Änderungen dieser Datenschutzerklärung"
     text: "Wir behalten uns vor, diese Datenschutzerklärung anzupassen, sobald sich der Umfang der Datenverarbeitung (z. B. durch Einbindung weiterer Dienste) ändert."
+  - nummer: "11."
+    titel: "Anonyme Reichweitenmessung (GoatCounter)"
+    text: 'Diese Website nutzt den datenschutzfreundlichen Analysedienst GoatCounter, um die Anzahl der Seitenaufrufe grob nachzuvollziehen. Dabei werden keine Cookies gesetzt, keine IP-Adressen gespeichert und keine personenbezogenen Profile erstellt – es werden ausschließlich anonyme, aggregierte Zugriffszahlen erfasst. Eine Zuordnung zu einzelnen Personen ist nicht möglich. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der statistischen Auswertung der Websitenutzung). Anbieter ist Martin Tournoij, Niederlande, <a href="https://www.goatcounter.com/privacy" target="_blank" rel="noopener" style="text-decoration:underline;">www.goatcounter.com/privacy</a>.'
