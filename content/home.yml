@@ -9,16 +9,23 @@ quick_facts:
   - icon: map-pin
     title: Ordination
     text: Tirolerstraße 18/1<br>9800 Spittal/Drau
+    button_text: ''
+    button_link: ''
   - icon: clock
     title: Ordinationszeiten
-    text: Mo von 8 bis 18 Uhr<br> Di, Mi, Do von 8-bis 14 Uhr
+    text: Mo von 8 bis 18 Uhr<br> Di, Mi, Do von 8-bis 14 Uhr, Fr nach Vereinbarung
+    button_text: ''
+    button_link: ''
   - icon: phone
     title: Terminvereinbarung
+    text: ''
     button_text: Termin buchen
     button_link: kontakt.html#termin
   - icon: check-circle
     title: Barrierefrei
     text: Die Ordination ist barrierefrei zugänglich.
+    button_text: ''
+    button_link: ''
 leistungen_teaser:
   heading: Ein umfassendes Leistungsspektrum der Inneren Medizin
   lede: Von der Vorsorge bis zur individuellen Therapie – ich nehme mir Zeit für ein persönliches Gespräch und begleite Sie mit langjähriger Erfahrung auf dem gesamten Gebiet der Inneren Medizin.
