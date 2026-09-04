@@ -9,7 +9,7 @@ kontaktdaten:
   oeffnungszeiten_kompakt: Mo 8 bis 18 Uhr<br>Di - Do 8-14 Uhr
   oeffnungszeiten_hinweis: und nach telefonischer Vereinbarung
 karte:
-  iframe_src: https://www.google.com/maps?q=Tirolerstra%C3%9Fe+18%2F1,+9800+Spittal+an+der+Drau,+%C3%96sterreich&output=embed
+  iframe_src: https://www.google.com/maps?q=46.7999217,13.4930563&z=17&output=embed
   iframe_title: Standort der Ordination auf Google Maps
   hinweis: Beim Laden der Karte wird eine Verbindung zu Google-Servern hergestellt. Details dazu finden Sie in unserer <a href="datenschutz.html" style="text-decoration:underline;">Datenschutzerklärung</a>.
 booking:

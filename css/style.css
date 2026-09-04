@@ -309,10 +309,10 @@ h3 { font-size: 1.25rem; line-height: 1.3; font-weight: 700; }
    ========================================================================== */
 .hero-slideshow {
   position: relative;
-  height: 46vh;
+  height: 50vh;
   min-height: 300px;
-  max-height: 480px;
-  max-width: 1800px;
+  max-height: 560px;
+  max-width: 1500px;
   margin-inline: auto;
   overflow: hidden;
   background: var(--gray-900);
@@ -329,7 +329,7 @@ h3 { font-size: 1.25rem; line-height: 1.3; font-weight: 700; }
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 20%;
+  object-position: center 25%;
   transform: scale(1.02);
   transition: transform 7s ease-out;
 }
