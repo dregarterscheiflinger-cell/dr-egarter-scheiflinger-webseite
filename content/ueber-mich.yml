@@ -82,6 +82,12 @@ weitere_ausbildungen:
     text: Masterclass Diabetes
   - icon: refresh
     text: Regelmäßige Updates in der Inneren Medizin
+team:
+  - bild:
+      image: images/evelin-truskaller-risser.webp
+      alt: Evelin Truskaller-Risser
+    name: Evelin Truskaller-Risser
+    rolle: DGKS – Ordinationsassistenz
 final_cta:
   heading: Ich freue mich auf Ihren Besuch!
   text: Vereinbaren Sie einen Termin.

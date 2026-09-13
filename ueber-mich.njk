@@ -93,6 +93,23 @@ permalink: "ueber-mich.html"
     </div>
   </div>
 
+  <!-- Team -->
+  <div class="section">
+    <div class="container">
+      <span class="eyebrow">Mein Team</span>
+      <h2>An meiner Seite</h2>
+      <div class="team-grid" style="margin-top:22px;">
+        {%- for member in ueberMich.team %}
+        <div class="team-card">
+          <img src="{{ member.bild.image }}" alt="{{ member.bild.alt }}" loading="lazy">
+          <h3>{{ member.name }}</h3>
+          <span>{{ member.rolle }}</span>
+        </div>
+        {%- endfor %}
+      </div>
+    </div>
+  </div>
+
   <div class="section section--gray">
     <div class="container">
       <div class="info-box info-box--bordeaux" style="display:flex; flex-wrap:wrap; gap:20px; align-items:center; justify-content:space-between;">

@@ -216,6 +216,19 @@ singletons:
         fields:
           - *icon_field
           - { name: text, label: "Text" }
+      - name: team
+        label: "Mein Team"
+        widget: list
+        summary: "{{fields.name}}"
+        fields:
+          - name: bild
+            label: "Foto"
+            widget: object
+            fields:
+              - { name: image, label: "Bild", widget: image }
+              - { name: alt, label: "Bildbeschreibung" }
+          - { name: name, label: "Name" }
+          - { name: rolle, label: "Rolle / Ausbildung" }
       - name: final_cta
         label: "Abschluss-Bereich"
         widget: object
