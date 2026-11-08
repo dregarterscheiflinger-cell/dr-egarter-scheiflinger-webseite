@@ -7,7 +7,16 @@ ecard:
   text: Die E-Card ist bei jedem Besuch in der Ordination verpflichtend mitzubringen und zu stecken.
 rezepte:
   heading: Rezeptbestellung
-  text: Rezepte können telefonisch oder bevorzugt per E-Mail an <a href="mailto:ordination@dr-egarter-scheiflinger.at" style="text-decoration:underline;">ordination@dr-egarter-scheiflinger.at</a> bestellt werden. Für eine Weiterverordnung ist es notwendig, 1× im Quartal persönlich zu den Ordinationszeiten in die Ordination zu kommen, um die E-Card zu stecken – das ist ohne Terminvereinbarung möglich. Es wird eine Pauschale von 5 € pro Rezept bzw. 10 € für ein bewilligungspflichtiges Rezept verrechnet.
+  intro: Der einfachste und schnellste Weg, ein Rezept anzufordern, ist unsere Online-Rezeptbestellung. Bitte nutzen Sie bevorzugt diese Möglichkeit.
+  button_text: Rezept online bestellen
+  button_link: '#rezept-online'
+  email_text: 'Nur falls die Online-Bestellung nicht möglich ist: per E-Mail an <a href="mailto:ordination@dr-egarter-scheiflinger.at" style="text-decoration:underline;">ordination@dr-egarter-scheiflinger.at</a>.'
+  telefon_text: Telefonische Rezeptbestellungen bitte nur in Ausnahmefällen, damit die Leitung für Terminvereinbarungen frei bleibt.
+  text: Für eine Weiterverordnung ist es notwendig, 1× im Quartal persönlich zu den Ordinationszeiten in die Ordination zu kommen, um die E-Card zu stecken – das ist ohne Terminvereinbarung möglich. Es wird eine Pauschale von 5 € pro Rezept bzw. 10 € für ein bewilligungspflichtiges Rezept verrechnet.
+rezept_formular:
+  heading: Rezept online bestellen
+  lede: Füllen Sie das Formular aus, wir bearbeiten Ihre Anfrage so rasch wie möglich.
+  src: "https://egarter-scheiflinger.termion.at/Api/Rezept/27988?mitarbeitercode=279887e1b003b-f582-4db6-b522-fc7b70e1adb7&loginBox=0&language=DE&color=f2f4f8&colorhover=e8edf6&fontcolor=fff&titelfontcolor=000000&txtfontcolor=000000&fontcolorhover=fff&txtbordercolor=fff&txtbordercolorhover=e5e5e5&btnbordersize=0px&btnbordercolor=e5e5e5&btnbordercolorhover=16213e&txtbordersize=0px&btncolor=16213e&btncolorhover=16213e&btnfontcolor=fff&btnfontcolorhover=fff&underlinecolor=831212&shadow=none&confirmfontsize=9px&titlefontsize=16px&txtfontsize=13px&fontfamily=&titelfontfamily=&txtfontfamily=&btnbordercolor=e5e5e5&boxbordersize=2px"
 wahlarzt:
   heading: Wahlärztin ohne Kassenvertrag
   text: Ich bin als Wahlärztin ohne Kassenvertrag tätig. Das bedeutet, dass wir unsere ärztlichen Leistungen per Honorarnote direkt mit Ihnen verrechnen und für Sie die Einreichung bei Ihrer Krankenkasse übernehmen. Von dieser erhalten Sie dann einen Teil der Kosten rückerstattet. Sollten Sie privat zusatzversichert sein, können Sie sogar mit einer Rückerstattung in Höhe der Gesamtkosten rechnen.
