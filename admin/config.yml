@@ -262,7 +262,7 @@ singletons:
           - { name: intro, label: "Einleitung (Online-Bestellung als bevorzugter Weg)", widget: text }
           - { name: button_text, label: "Button-Text" }
           - { name: button_link, label: "Button-Link (#rezept-online = Formular auf dieser Seite)" }
-          - { name: email_text, label: "E-Mail als Ersatz (HTML/Link erlaubt)", widget: text }
+          - { name: email_text, label: "E-Mail-Alternative (HTML/Link erlaubt)", widget: text }
           - { name: telefon_text, label: "Hinweis zur telefonischen Bestellung", widget: text }
           - { name: text, label: "Weitere Infos (Quartal, Pauschale)", widget: text }
       - name: rezept_formular

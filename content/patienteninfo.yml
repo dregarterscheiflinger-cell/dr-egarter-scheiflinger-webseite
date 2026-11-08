@@ -10,8 +10,8 @@ rezepte:
   intro: Der einfachste und schnellste Weg, ein Rezept anzufordern, ist unsere Online-Rezeptbestellung. Bitte nutzen Sie bevorzugt diese Möglichkeit.
   button_text: Rezept online bestellen
   button_link: '#rezept-online'
-  email_text: 'Nur falls die Online-Bestellung nicht möglich ist: per E-Mail an <a href="mailto:ordination@dr-egarter-scheiflinger.at" style="text-decoration:underline;">ordination@dr-egarter-scheiflinger.at</a>.'
-  telefon_text: Telefonische Rezeptbestellungen bitte nur in Ausnahmefällen, damit die Leitung für Terminvereinbarungen frei bleibt.
+  email_text: 'Alternativ können Sie Ihr Rezept auch per E-Mail an <a href="mailto:ordination@dr-egarter-scheiflinger.at" style="text-decoration:underline;">ordination@dr-egarter-scheiflinger.at</a> bestellen.'
+  telefon_text: Eine telefonische Bestellung ist ebenfalls möglich, wir bitten aber darum, nach Möglichkeit darauf zu verzichten.
   text: Für eine Weiterverordnung ist es notwendig, 1× im Quartal persönlich zu den Ordinationszeiten in die Ordination zu kommen, um die E-Card zu stecken – das ist ohne Terminvereinbarung möglich. Es wird eine Pauschale von 5 € pro Rezept bzw. 10 € für ein bewilligungspflichtiges Rezept verrechnet.
 rezept_formular:
   heading: Rezept online bestellen

@@ -27,8 +27,8 @@ permalink: "patienteninfo.html"
           <h3 style="margin-bottom:10px;">{{ patienteninfo.rezepte.heading }}</h3>
           <p style="color:var(--gray-700);">{{ patienteninfo.rezepte.intro | safe }}</p>
           <p style="margin:16px 0;"><a class="btn btn-primary" href="{{ patienteninfo.rezepte.button_link }}">{{ patienteninfo.rezepte.button_text }}</a></p>
-          <p class="rezept-alt">{{ patienteninfo.rezepte.email_text | safe }}</p>
-          <p class="rezept-alt">{{ patienteninfo.rezepte.telefon_text | safe }}</p>
+          <p style="color:var(--gray-700);">{{ patienteninfo.rezepte.email_text | safe }}</p>
+          <p style="color:var(--gray-700); margin-top:10px;">{{ patienteninfo.rezepte.telefon_text | safe }}</p>
           <p style="color:var(--gray-700); margin-top:16px;">{{ patienteninfo.rezepte.text | safe }}</p>
         </div>
       </div>
